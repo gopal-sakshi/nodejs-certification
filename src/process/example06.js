@@ -13,14 +13,15 @@ process.on('uncaughtException', (err, origin) => {
  * Bad: uncaughtException event will be launched if you call
  * a function when this isn´t defined.
  */
-functionNotFound();
+// functionNotFound();
 
 /*
  * Good: if you work with try and catch and your not defined
  * function is into try uncaughtException not will be launched.
  */
-// try {
-//   functionNotFound();
-// } catch (err) {
-//   console.error(err);
-// }
+try {
+  functionNotFound();
+} catch (err) {
+  // console.error(err);
+  console.log('pappa MAX')
+}

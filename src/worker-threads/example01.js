@@ -11,8 +11,9 @@ const __dirname = path.resolve();
 
 if (isMainThread) {
   // This re-loads the current file inside a Worker instance.
+  console.log('hello I am Main thread');
   new Worker(`${__dirname}/src/worker-threads/example01.js`);
 } else {
-  console.log('Inside Worker!');
+  console.log('Inside Worker thread!');
   console.log(isMainThread); // Prints 'false'.
 }

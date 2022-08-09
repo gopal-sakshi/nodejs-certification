@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 process.on('beforeExit', (code) => {
   console.log('Process beforeExit event with code: ', code);
@@ -18,7 +18,7 @@ console.log('Hi from NodeJS... go to run a setTimeout');
 // Define timeout for show while console.
 setTimeout(() => {
   let i = 0;
-  while (i <= 1000) {
+  while (i <= 10) {
     console.log(i);
     i += 1;
   }

@@ -13,6 +13,10 @@ const __dirname = path.resolve();
 const workerA = new Worker(`${__dirname}/src/worker-threads/example03/task-a.js`);
 const workerB = new Worker(`${__dirname}/src/worker-threads/example03/task-b.js`);
 
+console.log(workerA.threadId);
+console.log(workerB.threadId);
+
+workerA.on('')
 // Active on message event for Worker A;
 workerA.on('message', (data) => {
   console.log(`Message from workerA -> ${data}`);

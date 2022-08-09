@@ -21,6 +21,10 @@ const destinationGzipTXT = createWriteStream(`${__dirname}/src/zlib/example04/ar
 const destinationDeflateTXT = createWriteStream(`${__dirname}/src/zlib/example04/article-deflate.txt.gz`);
 const destinationBrotliTXT = createWriteStream(`${__dirname}/src/zlib/example04/article-brotli.txt.gz`);
 
+// Trying to use inflate... make sure source is readStream... dest is writeStream
+const newDestInflate = createWriteStream(`${__dirname}/src/zlib/example04/jingChakSarissa_inflate.jpg`);
+const newSourceInflate = createReadStream(`/home/vsspl/Desktop/backEnd/nodejs-certification/src/zlib/example04/photo-deflate.jpg.gz`)
+
 // Define pipeline with streams and gzip method (other stream).
 pipeline(sourceJPG, zlib.createGzip(), destinationGzipJPG, (err) => {
   if (err) {
@@ -35,8 +39,9 @@ pipeline(sourceJPG, zlib.createDeflate(), destinationDeflateJPG, (err) => {
   if (err) {
     console.error('[deflate jpg] Ups, an error:', err);
     process.exitCode = 1;
-  }
+  }  
   console.log('[deflate jpg] Done!');
+  pipeline(newSourceInflate, zlib.createInflate(), newDestInflate, (err) => { if(err) console.log(`blah =`,err); process.exit(1) })
 });
 
 // Define pipeline with streams and gzip method (other stream).

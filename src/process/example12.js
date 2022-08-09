@@ -12,6 +12,7 @@ process.on('exit', (code) => {
 
 setTimeout(() => {
   process.exit(0);
+  console.log('will I get printed');
 }, 1000);
 
 // setTimeout(() => {

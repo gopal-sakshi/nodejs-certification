@@ -9,4 +9,12 @@ import 'pretty-console-colors';
 const str = 'Hi from NodeJS';
 const str1 = Buffer.from(str);
 const str2 = Buffer.byteLength(str);
-console.log(`str: ${str}, str length: ${str.length}, str1 lenght: ${str1.length}, str2 byteLength: ${str2}`);
+console.log(`str: ${str}`);
+console.log(`str length: ${str.length}`);
+console.log(`str1 lenght: ${str1.length}`);
+console.log(`str2 byteLength: ${str2}`);
+// Because UTF-8 uses one to three bytes to represent Unicode characters, 
+    // the byte length will not be the same as the character length in general.
+
+
+    

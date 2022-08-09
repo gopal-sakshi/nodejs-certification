@@ -46,6 +46,12 @@ const File = {
 const asyncHook = async_hooks.createHook({
   init: (asyncId, type, triggerAsyncId, resource) => {
     const eid = async_hooks.executionAsyncId();
+    
+    // console.log() is an asynchronous operation in Node.js. 
+        // That means that when the init callback runs, console.log() will trigger a new init event, producing an endless recursion, 
+        // and in the end, reaching the maximum call stack size.
+    console.log('cant console anything in init because '); 
+
     File.appendContentFile(`[INIT] timestamp: ${Date.now()} > ${type}(${asyncId}): / trigger: ${triggerAsyncId} / execution: ${eid} / resource: ${resource}\n`);
   },
   before: () => {

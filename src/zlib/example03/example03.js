@@ -15,8 +15,8 @@ const __dirname = path.resolve();
 const gunzip = zlib.createGunzip();
 
 // Define source and destination file for uncompress secuence.
-const source = createReadStream(`${__dirname}/src/zlib/example04/photo.jpg.gz`);
-const destination = createWriteStream(`${__dirname}/src/zlib/example04/photo.jpg`);
+const source = createReadStream(`${__dirname}/src/zlib/example03/photo.jpg.gz`);
+const destination = createWriteStream(`${__dirname}/src/zlib/example03/photo.jpg`);
 
 // Define pipeline with streams and gzip method (other stream).
 pipeline(source, gunzip, destination, (err) => {

@@ -11,5 +11,5 @@ const __dirname = path.resolve();
 
 const workerA = new Worker(`${__dirname}/src/worker-threads/example02/task-a.js`);
 const workerB = new Worker(`${__dirname}/src/worker-threads/example02/task-b.js`);
-console.log(workerA);
-console.log(workerB);
+console.log('worker A obj ==========>', workerA);
+console.log('worker B obj ==========>', workerB);

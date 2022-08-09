@@ -18,13 +18,14 @@ const gzip = zlib.createGzip();
 const sourceA = createReadStream(`${__dirname}/src/zlib/example02/photo.jpg`);
 const destinationA = createWriteStream(`${__dirname}/src/zlib/example02/photo.jpg.zip`);
 
-// Define pipeline with streams and gzip method (other stream).
+// COMPRESS
 pipeline(sourceA, gzip, destinationA, (errA) => {
   if (errA) {
     console.error('Ups, an error:', errA);
     process.exitCode = 1;
   }
-  // Define source and destination file for uncompress secuence.
+
+  // DECOMPRESS
   const sourceB = createReadStream(`${__dirname}/src/zlib/example02/photo.jpg.zip`);
   const destinationB = createWriteStream(`${__dirname}/src/zlib/example02/photo-new.jpg`);
   // Define pipeline with streams and gzip method (other stream).
