@@ -7,9 +7,9 @@
 import { Worker } from 'worker_threads';
 import path from 'path';
 
-const __dirname = path.resolve();
+var __dirname = path.resolve();
 
 const workerA = new Worker(`${__dirname}/src/worker-threads/example02/task-a.js`);
 const workerB = new Worker(`${__dirname}/src/worker-threads/example02/task-b.js`);
-console.log('worker A obj ==========>', workerA);
-console.log('worker B obj ==========>', workerB);
+// console.log('worker A obj ==========>', workerA);
+// console.log('worker B obj ==========>', workerB);

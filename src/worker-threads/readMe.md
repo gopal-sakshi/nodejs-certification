@@ -1,3 +1,24 @@
+# How to Run
+- open terminal
+- `change node version to 16.10.0` ----> otherwise 'cant use import statement outside module'
+- node src/worker-threads/example01.js
+------------------------------------------------------------------------------------------------------------------------
+
+import { 
+    Worker, 
+    isMainThread,
+    parentPort
+} from 'worker_threads';
+
+`main file`
+const workerA = new Worker(someNodeJsFile.js);
+workerA.on('message', callBackFunction23);
+
+`worker file`
+parentPort.postMessage('some string (or) json object');
+
+
+------------------------------------------------------------------------------------------------------------------------
 # Worker Threads
 - useful for performing heavy JavaScript tasks. 
 - With the help of threads, Worker makes it easy to run javascript codes in parallel 
@@ -53,6 +74,9 @@
     message is emitted whenever a worker sends data to the parent thread.
 
 https://blog.logrocket.com/a-complete-guide-to-threads-in-node-js-4fa3898fe74f/
+------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
