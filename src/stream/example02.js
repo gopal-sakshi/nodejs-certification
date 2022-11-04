@@ -1,8 +1,3 @@
-/**
- * Description: Include callbacks for open, ready, finish, open and error events.
- */
-
-/** Import generics dependences */
 import fs from 'fs';
 import path from 'path';
 
