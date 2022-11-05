@@ -11,12 +11,13 @@ import {
 } from 'worker_threads';
 
 `main file`
-const workerA = new Worker(someNodeJsFile.js);
-workerA.on('message', callBackFunction23);
+const workerA = new Worker(someNodeJsFile.js);              // creating workerThread
+workerA.on('message', callBackFunction23);                  // parent subscribing to messages from workerThread
 
 `worker file`
-parentPort.postMessage('some string (or) json object');
-
+parentPort.postMessage(data);                               // when parent sends 'data' to worker
+parentPort.on('message', async (data) => {});               // when worker receives 'data' object from parent (or) 
+                                                                // worker subscribing to messages from parentPort
 
 ------------------------------------------------------------------------------------------------------------------------
 # Worker Threads

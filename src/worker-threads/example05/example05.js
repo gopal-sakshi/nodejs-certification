@@ -11,7 +11,7 @@ import fs from 'fs';
 
 const __dirname = path.resolve();
 
-// Watch if the json file change the content.
+// Watch if the json file change the content --------> open data.json in vscode... edit & save ---> voila, see new.json getting created
 fs.watch(`${__dirname}/src/worker-threads/example05/data.json`, { encoding: 'buffer' }, (eventType) => {
   if (eventType === 'change') {
     // For save worker;
