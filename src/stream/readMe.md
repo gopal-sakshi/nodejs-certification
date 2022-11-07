@@ -1,6 +1,6 @@
 Some Commands
 --------------------------------------------------------------
-fs.createWriteStream('input.txt');
+file = fs.createWriteStream('input.txt');
 
 file.write('joker is played by heath ledger');
 file.write('\n');
