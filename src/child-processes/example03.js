@@ -5,32 +5,24 @@
 /** Import generics dependences */
 import { spawn, spawnSync } from 'child_process';
 import path from 'path';
-import 'pretty-console-colors';
 
 const __dirname = path.resolve();
-
-// Launch spawnSync function to execute sh file.
-const fncSpawnSync = () => {
-  console.time('[fncSpawnSync] sh');
-  try {
-    const bat = spawnSync('sh', [
-      `${__dirname}/src/child-processes/test.sh`,
-    ]);
-    console.log('[fncSpawnSync] sh stdout > data (buffer)', Buffer.from(bat.stdout).toString());
-    console.timeEnd('[fncSpawnSync] sh');
-  } catch (err) {
-    console.error('[fncSpawnSync] sh stderr > err', err);
-    console.timeEnd('[fncSpawnSync] sh');
-  }
-};
-fncSpawnSync();
 
 // Launch spawn function to execute sh file.
 const fncSpawn = () => {
   console.time('[fncSpawn] sh');
+
+  // USES SINGLE sh file --------------------------------->
+  // const bat = spawn('sh', [
+  //   `${__dirname}/src/child-processes/test.sh`,
+  // ]);
+
+  // USES MULTIPLE sh files ----------------- DID NOT WORK -------------->
   const bat = spawn('sh', [
-    `${__dirname}/src/child-processes/test.sh`,
+    `${__dirname}/src/child-processes/test1.sh`,
+    `${__dirname}/src/child-processes/test2.sh`,
   ]);
+
   bat.stdout.on('data', (data) => {
     console.log('[fncSpawn] sh stdout > data (buffer)', Buffer.from(data).toString());
   });
@@ -42,3 +34,23 @@ const fncSpawn = () => {
   });
 };
 fncSpawn();
+console.log('----------------------------------------');
+console.log('spawn in non-blocking... so code goes to next line');
+console.log('spawnSync in blocking... code wont move further');
+console.log('----------------------------------------');
+// Launch spawnSync function to execute sh file.
+const fncSpawnSync = () => {  
+  try {
+    const bat = spawnSync('sh', [
+      `${__dirname}/src/child-processes/test.sh`,
+    ]);
+    console.log('[fncSpawnSync] sh stdout > data (buffer)', Buffer.from(bat.stdout).toString());    
+  } catch (err) {
+    console.error('[fncSpawnSync] sh stderr > err', err);
+    console.timeEnd('[fncSpawnSync] sh');
+  }
+};
+fncSpawnSync();
+
+
+
