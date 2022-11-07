@@ -29,6 +29,10 @@ server.on('request', (request, response) => {
     fs.createReadStream(`${__dirname}/src/stream/example08/index.html`)
       .pipe(createGzip())
       .pipe(response);
+
+      // fs.createReadStream(`${__dirname}/src/stream/example08/blah.txt`)
+      // .pipe(createGzip())
+      // .pipe(response);
   }
   request.on('end', () => {
     console.log('👀 Request  | End ⤵️');

@@ -3,25 +3,32 @@
  */
 
 /** Require generics dependences */
+import fs from 'fs';
 import readline from 'readline';
+
+import path from 'path';
+const __dirname = path.resolve();
 
 const rl = readline.createInterface({
   input: process.stdin,
+  input: fs.createReadStream(`${__dirname}/src/readline/bigInput.txt`),
   output: process.stdout,
 });
-
+var lineCount = 0;
 console.log('To exit this process you just have to press <ctrl> + C');
 
 // Active prompt and wait any data.
-rl.prompt();
+// rl.prompt();
 
 // If you write in prompt and push enter you can see this log.
 rl.on('line', (input) => {
-  console.log(`Received: ${input}`);
+  // console.log(`Received: ${input}`);
+  lineCount += lineCount;
 });
 
 rl.on('close', () => {
   console.log('Readline closed.');
+  console.log(lineCount);
 });
 
 rl.on('pause', () => {

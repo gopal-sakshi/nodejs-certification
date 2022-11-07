@@ -31,17 +31,17 @@ originFile
   .pipe(destinationFile);
 
 // All events examples.
-originFile.on('open', () => console.log('Event originFile: open'));
-originFile.on('ready', () => console.log('Event originFile: ready'));
-originFile.on('finish', () => console.log('Event originFile: finish'));
-originFile.on('close', () => console.log('Event originFile: close'));
-originFile.on('error', () => console.log('Event originFile: error'));
+// originFile.on('open', () => console.log('Event originFile: open'));
+// originFile.on('ready', () => console.log('Event originFile: ready'));
+// originFile.on('finish', () => console.log('Event originFile: finish'));
+// originFile.on('close', () => console.log('Event originFile: close'));
+// originFile.on('error', () => console.log('Event originFile: error'));
 
 myTransform.on('end', () => console.log('Event myTransform: end'));
 myTransform.on('finish', () => console.log('Event myTransform: finish'));
 
-destinationFile.on('open', () => console.log('Event destinationFile: open'));
-destinationFile.on('ready', () => console.log('Event destinationFile: ready'));
-destinationFile.on('finish', () => console.log('Event destinationFile: finish'));
-destinationFile.on('close', () => console.log('Event destinationFile: close'));
-destinationFile.on('error', () => console.log('Event destinationFile: error'));
+// destinationFile.on('open', () => console.log('Event destinationFile: open'));
+// destinationFile.on('ready', () => console.log('Event destinationFile: ready'));
+// destinationFile.on('finish', () => console.log('Event destinationFile: finish'));
+// destinationFile.on('close', () => console.log('Event destinationFile: close'));
+// destinationFile.on('error', () => console.log('Event destinationFile: error'));

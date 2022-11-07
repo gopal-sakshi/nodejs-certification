@@ -1,1 +1,2 @@
 Hi from origin file.
+Hi from origin file. (here in 2nd line  origin is not replaced with destination)
