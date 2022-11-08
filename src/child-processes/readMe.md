@@ -74,3 +74,7 @@ child process created by exec()
     does spawn a shell in which the passed command is executed
     buffers the data (waits till the process closes and transfers the data in on chunk)
     maximum data transfer up to Node.js v.12.x was 200kb (by default), but since Node.js v.12x was increased to 1MB (by default)
+
+
+exec(`sh ${__dirname}/src/child-processes/test.sh`, () => {} );                     // data is accessed in callback function
+const bat = spawn('sh', [`${__dirname}/src/child-processes/test.sh`,]);             // data is accessed at bat.stdout.on('data', () => {} )

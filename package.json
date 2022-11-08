@@ -1,8 +1,7 @@
 {
   "name": "nodejs-certification",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
+  "description": "",  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoseJPR/nodejs-certification.git"

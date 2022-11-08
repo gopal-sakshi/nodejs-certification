@@ -10,7 +10,8 @@ var {spawn, exec} = require('child_process');
     // uses streams to transfer data (spawn.stout)  
 var spawn = spawn('node', ['module.js']);     
 spawn.stdout.on('data', function(msg){         
-    console.log(msg.toString())
+    // console.log(msg.toString())
+    console.log(msg)
 });
 
     // the 'node module.js' runs in the spawned shell 
