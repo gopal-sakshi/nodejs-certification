@@ -56,6 +56,28 @@ There are situations where blocking is necessary, like requiring modules, but in
 As an aside, if you're trying to copy a file you can use the fs module and pipe the original file into a new file in a new destination with a new name. The below approach is async, and doesn't require any external dependencies or control flow library. Additionally, it should be more performant than any of the code you've implemented above.
 ----------------------------------------------------------------------------------
 
+Ways to create child processes
+- spawn
+- spawnSync
+- exec
+    will spawn a subshell and execute the command in that shell
+    execFile & spawn ====> accept arguments
+    exec ======> does not accept arguments, because exec allows us to execute more than one command on a shell. 
+            ===> When using exec, if we need to pass arguments to the command, they should be part of the whole command string.
+    `use cases` ==> when we need to utilize shell functionality such as pipe, redirects, backgrounding
+- execSync
+- execFile
+    when we just need to execute an application and get the output.
+    run an image-processing application like ImageMagick to convert an image from PNG to JPG format
+- execFileSync
+- 
+
+`Theory`
+- 4 ways to create child process ====> exec, spawn, execFile, fork
+- all four are asynchronous ====> they return an object which is an instance of child_process class
+- 
+
+----------------------------------------------------------------------------------
 
 # spawn vs exec
 
@@ -78,3 +100,18 @@ child process created by exec()
 
 exec(`sh ${__dirname}/src/child-processes/test.sh`, () => {} );                     // data is accessed in callback function
 const bat = spawn('sh', [`${__dirname}/src/child-processes/test.sh`,]);             // data is accessed at bat.stdout.on('data', () => {} )
+
+----------------------------------------------------------------------------------
+
+`fork`
+- special case of child_process.spawn() 
+- used specifically to spawn new Node.js processes. 
+- Like child_process.spawn(), a ChildProcess object is returned. 
+- The returned ChildProcess will have an additional communication channel built-in 
+    which allows messages to be passed back and forth between the parent and child.
+- The fork method will open an IPC channel allowing message passing between Node processes:
+    On the child process, `process.on(‘message’)` and `process.send(‘message to parent’)` can be used to receive and send data
+    On the parent process, `child.on(‘message’)` and `child.send(‘message to child’)` are used
+    Each process has it’s <own memory>, with <their own V8 instances> assuming at least 30ms start up and 10mb each.
+
+

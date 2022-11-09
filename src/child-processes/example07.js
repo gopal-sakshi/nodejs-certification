@@ -5,7 +5,7 @@
 /** Import generics dependences */
 import { fork } from 'child_process';
 import path from 'path';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const __dirname = path.resolve();
 
