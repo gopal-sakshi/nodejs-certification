@@ -1,8 +1,3 @@
-/**
- * Description: Create Readable Stream with iterate map with severals objects items.
- */
-
-/** Import generics dependences */
 import { Readable } from 'stream';
 
 const content = [

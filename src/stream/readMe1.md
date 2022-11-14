@@ -81,6 +81,9 @@ createReadStream('input23.txt')
 createReadStream('input23.txt')    
     .pipe(response)             // browser just displays contents of input23.txt
                                     // but no download... how come ??
+
+
+inputStream1.pipe(inputStream2).pipe(inputStream3).pipe(outputStreamFinal)
 --------------------------------------------------------
 
 All modern browsers can handle a gzip encoded response. 
@@ -95,4 +98,7 @@ If the client does send it, you can optionally encode the response using gzip.
 example09, example10, example11 ----------> iterators, generators
 
 
-import { Writable, Readable } from 'stream';
+import { Writable, Readable } from 'stream';                
+const origin = Readable.from(iterable23);                       // iterable23 = an array (or) something that can be iterated
+origin.on('data', (data23) => { console.log(data23) });
+

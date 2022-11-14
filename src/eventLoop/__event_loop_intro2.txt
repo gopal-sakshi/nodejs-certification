@@ -1,0 +1,12 @@
+https://nodejs.dev/learn/the-nodejs-event-loop
+
+
+The Node.js JavaScript code runs on a single thread. 
+- SINGLE THREAD =============> There is just one thing happening at a time.
+
+
+In most browsers there is an event loop for every browser tab, 
+    to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
+Its not like all tabs share a single event loop. 
+each browser tab ---> will have its own event loop
+--------------------------------------------------------------------------------------------------------------
