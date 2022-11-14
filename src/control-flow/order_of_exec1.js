@@ -3,23 +3,32 @@ const foo = () => console.log('foo');
 const zoo = () => console.log('zoo');
 
 const start = () => {
-  console.log('start');
-  
-  // step 1
+  console.log('start');  
   setImmediate(baz);
-
-  // step 2
-  new Promise((resolve, reject) => {
-    resolve('bar');
-  }).then((resolve) => {
-    console.log(resolve);
-
-    // step 3
-    process.nextTick(zoo);
-  });
-
-  // step 4
+  Promise.resolve().then(() => console.log('boo'));
+  new Promise((resolve, reject) => {resolve('bar');}).then((resolve) => {console.log('---> ', resolve);process.nextTick(zoo); });  
   process.nextTick(foo);
 };
 
 start();
+
+/*
+    console.log(start)
+    microtaskqueue ==========> 
+    macrotaskqueue ==========> baz
+
+    console.log(start)
+    microtaskqueue ==========> 
+    macrotaskqueue ==========> baz
+
+
+    console.log(start)
+    microtaskqueue ==========> 
+    macrotaskqueue ==========> baz
+
+
+    console.log(start)
+    microtaskqueue ==========> 
+    macrotaskqueue ==========> baz
+
+*/
