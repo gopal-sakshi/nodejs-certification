@@ -9,3 +9,8 @@ p.then(() => {
 }).then(() => {
   console.log("tick 2");
 });
+
+// setTimeout(resolve) ===> added to microTaskQueue
+// an 'anonymous promise' is immediately resolved with 'p' promise ===> this goes into microTaskQueue
+  // so, associated .then() of this 'anonymous promise' will get executed
+// 
