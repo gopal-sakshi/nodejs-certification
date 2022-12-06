@@ -27,3 +27,14 @@ replServer.defineCommand('saybye', function saybye() {
   console.log('Goodbye!');
   this.close();
 });
+
+
+replServer.defineCommand('cls', {
+  help: 'Clear screen',
+  action: function(name) {
+   this.clearBufferedCommand(); //this.lineParser.reset(); this.bufferedCommand = '';
+   process.stdout.write('\u001B[2J\u001B[0;0f');
+  //  process.stdout.write('malli modalu pedatha, scratch nunchi');
+   this.displayPrompt();
+  }
+});

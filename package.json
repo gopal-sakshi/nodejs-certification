@@ -1,7 +1,7 @@
 {
   "name": "nodejs-certification",
   "version": "1.0.0",
-  "description": "",  
+  "description": "",
   "type": "module",
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
     "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {
+    "axios": "^1.2.0",
+    "https": "^1.0.0",
     "pretty-console-colors": "^1.1.1"
   }
 }

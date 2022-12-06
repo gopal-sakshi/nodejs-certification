@@ -1,7 +1,3 @@
-/**
- * Description: timeout vs immediate vs nextTick.
- */
-
 console.log('Hi from NodeJS');
 
 setTimeout(() => {

@@ -1,7 +1,3 @@
-/**
- * Description: timeout vs immediate with inside timers.
- */
-
 console.log('Hi from NodeJS');
 
 setTimeout(() => {

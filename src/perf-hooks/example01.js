@@ -4,7 +4,6 @@
 
 /** Require generics dependences */
 import { PerformanceObserver, performance } from 'perf_hooks';
-import 'pretty-console-colors';
 
 // Function example.
 const getJSONParse = (data) => {
@@ -25,6 +24,7 @@ const getJSONStringify = (data) => {
 // Define Observer for show name and duration timer.
 const obs = new PerformanceObserver((list) => {
   const entries = list.getEntries();
+  console.log(entries);
   entries.forEach((entry) => {
     console.log(`Function: ${entry.name}`, entry.duration);
   });

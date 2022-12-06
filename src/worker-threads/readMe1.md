@@ -11,8 +11,13 @@ import {
 } from 'worker_threads';
 
 `main file`
-const workerA = new Worker(someNodeJsFile.js);              // creating workerThread
+if(isMainThread) {                                                      // if it is main thread ===> we will create two workerThreads
+    const workerA = new Worker(someNodeJsFile_A.js);
+    const workerB = new Worker(someNodeJsFile_B.js);
+}
 workerA.on('message', callBackFunction23);                  // parent subscribing to messages from workerThread
+workerB.on('message', callBackFunction24);                  // parent subscribing to messages from workerThread
+// Note: all 3 threads ----> 1 main thread, workerA, workerB =====> all run on same process.pid
 
 `worker file`
 parentPort.postMessage(data);                               // when parent sends 'data' to worker

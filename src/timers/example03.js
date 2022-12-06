@@ -1,7 +1,3 @@
-/**
- * Description: timeout vs severals immediate.
- */
-
 console.log('Hi from NodeJS');
 
 setTimeout(() => {

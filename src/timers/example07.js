@@ -1,6 +1,3 @@
-/**
- * Description: timeout, immediate, nextTick and promises inside this with then/catch/finally.
- */
 console.log('Hi from NodeJS');
 
 setTimeout(() => {

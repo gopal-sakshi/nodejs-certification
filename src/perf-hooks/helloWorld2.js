@@ -1,5 +1,5 @@
-const { performance, PerformanceObserver } = require('perf_hooks');
-
+// const { performance, PerformanceObserver } = require('perf_hooks');
+import { PerformanceObserver, performance } from 'perf_hooks';
 // 3 functions
 function someFunction() { console.log('Hello World'); }
 function count(n) { if (n == 0) return n; console.log(n); count(n - 1); }

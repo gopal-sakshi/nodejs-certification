@@ -6,13 +6,12 @@
 import { PerformanceObserver, performance } from 'perf_hooks';
 import fs from 'fs';
 import path from 'path';
-import 'pretty-console-colors';
 
 const __dirname = path.resolve();
 
 const getAllFiles = (folder, done) => {
   performance.mark(`getAllFiles init ${folder}`);
-  const files = fs.readdirSync(`${__dirname}${folder}`);
+  const files = fs.readdirSync(`${__dirname}${folder}`);      // readdirSync ====> read_directory_sync
   files.forEach((file) => {
     console.log(file);
   });
@@ -29,7 +28,7 @@ const obs = new PerformanceObserver((list) => {
 });
 obs.observe({ entryTypes: ['measure'], buffered: false });
 
-getAllFiles('/src/path/test', () => {
+getAllFiles('/src/perf-hooks', () => {
   console.log('getAllFiles Done!');
 });
 

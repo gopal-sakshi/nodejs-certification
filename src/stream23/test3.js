@@ -11,7 +11,8 @@ const myTransformStream = new Transform({
     const str = chunk.toString() + "__en\n"
     this.push(str)
     done();
- }})
+  }
+})
 const myStream = fs.createReadStream(`src/stream23/hello.txt`, {
   highWaterMark: 4
 });

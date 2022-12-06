@@ -1,10 +1,6 @@
-/**
- * Description: Create a basic http server and return json example.
- */
-
 /** Import generics dependences */
 import http from 'http';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 /** Define configuration */
 const CONFIG = {

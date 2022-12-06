@@ -1,7 +1,3 @@
-/**
- * Description: nextTick with try/catch and not block timeout and immediate.
- */
-
 import fs from 'fs';
 
 console.log('Hi from NodeJS');
@@ -28,6 +24,6 @@ process.nextTick(() => {
     // Try read file that not exist.
     fs.readFileSync('noexist.json');
   } catch (err) {
-    console.error(err);
+    console.error(`${err}`);
   }
 });
