@@ -13,7 +13,9 @@ const fn23 = () => {
                                         env: { clubName: 'RealMadrid', stadiumName: 'Santiago Bernabeu' }
                                     }
                                 );
-    childProcessInstance.stdout.on('data', (data23) => { console.log(data23.toString()); })
+    // childProcessInstance.stdout.on('data', (data23) => { console.log(data23.toString()); });
+    childProcessInstance.on('message', (data23) => { console.log(data23); })
+    console.log('I will get consoled first... child process can go to hell & come back');
 }
 
 fn23();

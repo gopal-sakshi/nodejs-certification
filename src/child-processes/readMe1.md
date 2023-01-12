@@ -75,7 +75,8 @@ Ways to create child processes
 `Theory`
 - 4 ways to create child process ====> exec, spawn, execFile, fork
 - all four are asynchronous ====> they return an object which is an instance of child_process class
-- 
+- child_process instance is returned... meaning, the returned object is also a process
+    so, we can call process.stdout.on('data', () => {} )
 
 ----------------------------------------------------------------------------------
 

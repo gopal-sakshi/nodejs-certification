@@ -12,7 +12,7 @@
 - Class PerformanceNodeTiming Extends PerformanceEntry
 - Class PerformanceObserver
 - Class Histogram
-<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
 
 `For synchronous functions`
 - use performance.timerify(function23);
@@ -31,8 +31,16 @@ const obs = new PerformanceObserver((list) => {
 })
 
 obs.observe({ entryTypes: ['measure'], buffered: false });
-<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
 
 PerformanceEntry
 - is also a WebAPI
 - used on client side (inside a browser)
+<!------------------------------------------------------------------------------------------------------->
+
+performance.timerify(function23)
+
+performance.mark('startTag23'); 
+--- asyncFunction()
+performance.mark('endTag23');
+<!------------------------------------------------------------------------------------------------------->

@@ -4,15 +4,15 @@
 
 /** Import generics dependences */
 import EventEmitter from 'events';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Define Event and launch.
 const myEmitterA = new EventEmitter();
-myEmitterA.on('event', () => {
+myEmitterA.on('event23', () => {
   console.log('[launchEventA] an event occurred!');
 });
 const launchEventA = () => {
-  myEmitterA.emit('event');
+  myEmitterA.emit('event23');
 };
 launchEventA();
 

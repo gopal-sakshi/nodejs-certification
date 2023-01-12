@@ -33,7 +33,7 @@ For instance, while the engine is busy executing a script,
 
 Tasks from the queue are processed on “first come – first served” basis. 
 When the engine browser is done with the script, it handles mousemove event, then setTimeout handler, and so on.
------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 
 Rendering never happens while the engine executes a task. 
 It doesn’t matter if the task takes a long time. 

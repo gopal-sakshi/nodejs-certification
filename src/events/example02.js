@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import EventEmitter from 'events';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Define variables
 const myEmitters = {};

@@ -13,15 +13,16 @@ const fncSpawn = () => {
   console.time('[fncSpawn] sh');
 
   // USES SINGLE sh file --------------------------------->
-  // const bat = spawn('sh', [
-  //   `${__dirname}/src/child-processes/test.sh`,
-  // ]);
-
-  // USES MULTIPLE sh files ----------------- DID NOT WORK -------------->
   const bat = spawn('sh', [
-    `${__dirname}/src/child-processes/test1.sh`,
-    `${__dirname}/src/child-processes/test2.sh`,
+    `${__dirname}/src/child-processes/test.sh`,
   ]);
+  console.log('child_proc ', bat.pid);
+  console.log('pppp ', process.pid);
+  // USES MULTIPLE sh files ----------------- DID NOT WORK -------------->
+  // const bat = spawn('sh', [
+  //   `${__dirname}/src/child-processes/test1.sh`,
+  //   `${__dirname}/src/child-processes/test2.sh`,
+  // ]);
 
   bat.stdout.on('data', (data) => {
     console.log('[fncSpawn] sh stdout > data (buffer)', Buffer.from(data).toString());
