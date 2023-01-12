@@ -1,0 +1,22 @@
+nodeJS commands 
+
+node app.js							(to run a node.js program)
+process.exit()						(programmatically exit from a Node.js program) 
+										When Node.js runs this line, the process is immediately forced to terminate.
+										any pending callback, any network request still being sent, any filesystem access, processes writing to stdout = ungracefully terminated right away
+
+process.exit(1)						In the code, control shouldnt come here (or) program shouldnt come here... 
+									so, I am sending error code - 1
+
+process.exit(0)						program terminated successfully
+
+-----------------------------------------------------------------------------------------------------------
+-v (or) --version                   It is used to print node's version.
+-h, --help	                        It is used to print node command line options.
+-e, --eval "script"                 It evaluates the following argument as JavaScript. 
+                                        The modules which are predefined in the REPL can also be used in script.
+-p, --print "script"	            It is identical to -e but prints the result.
+-i (or) --interactive               open REPL
+AND Many more... no idea...
+
+-----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+web server - Node.js
+- software application which handles HTTP requests sent by the HTTP client (like browser)
+- returns web pages to the clients (html doc, images, style sheets, scripts)
+
+Features/tasks
+- support server-side scripts, using scripting languages 
+- redirecting the task to an application server which 
+	retrieves data from a database 
+	performs complex logic 
+	then sends a result to the HTTP client through the Web server.
+- for example: Apache web server 
+-----------------------------------------------------------------------------------------------------------------
+(a) Create a server
+	Server running at http://127.0.0.1:8081/
+(b) create index.html webpage
+(c) Make a request to Node.js server
+	http://127.0.0.1:8081/index.htm
+(d) Creating Web client using Node... run the program from new terminal
+	verify output @ client side
+	verify output @ server side
+	
+---------------------------------------------------------------------------------------------------------------

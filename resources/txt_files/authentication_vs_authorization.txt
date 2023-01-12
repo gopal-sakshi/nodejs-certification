@@ -1,0 +1,9 @@
+authentication 
+- is the process of verifying who someone is
+- The act of verifying a user identity, i.e. verify the user is who they say they are.
+- Login
+
+authorization
+- is the process of verifying what specific applications, files, data a user has access to
+- The act of granting access to specific resources (to an authenticated user, or bearer of a secret)
+- role, groups, attributes, access control list, scopes

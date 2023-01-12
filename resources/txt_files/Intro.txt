@@ -1,0 +1,20 @@
+Command line interface
+- Bash on linux
+- terminal on Mac
+- Command Prompt on Windows
+
+this is how things used to be CLI
+But now its Graphical User Interface - GUI
+---------------------------------------------------------------------------
+
+some commands
+dir /w 			= show list of files in two columns
+cd ..
+ls
+mkdir test_dir
+
+
+PowerShell
+- more powerful, has more commands
+- standardised as linux bash
+

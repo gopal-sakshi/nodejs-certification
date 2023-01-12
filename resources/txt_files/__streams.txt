@@ -1,0 +1,23 @@
+Streams
+- handle reading/writing files, 
+- network communications, or 
+- any kind of end-to-end information exchange in an efficient way.
+
+
+traditional way
+- when you tell the program to read a file, the entire file is read into memory, from start to finish, and then you process it.
+
+Using streams
+- you read it piece by piece, processing its content without keeping it all in memory.
+- you don't need to load large amounts of data in memory before you are able to process it
+- less time to start processing data, since you can start processing as soon as you have it, rather than waiting till the whole data payload is available
+
+
+fs.readFile(...)
+    // reads the full contents of file... then something can be done
+    // say you want to convert the file (txt to zip (or) mkv to mp4)
+    // say the image/video/text file is 1Gb big ====> whole file is read into memory (not good practice)
+fs.createReadStream()
+    // the 1Gb video is read in parts
+
+

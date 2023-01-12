@@ -1,0 +1,28 @@
+module.exports
+
+modules
+- self-contained units of functionality that can be shared and reused across projects
+
+-------------------------------------------------------------------------------------------------------------------------------
+JavaScript originally had no concept of modules... But overtime, 
+
+AMD format 
+    Asynchronous Module Definition 
+    used in browsers 
+    uses a define function to define modules.
+CJS format 
+    CommonJS
+    is used in Node.js 
+    uses require & module.exports to define dependencies and modules. 
+    The npm ecosystem is built upon this format.
+ESM format. 
+    ES Module
+    As of ES6 (ES2015), JavaScript supports a native module format. 
+    It uses an export keyword to export a module’s public API and an import keyword to import it.
+System.register format
+    was designed to support ES6 modules within ES5.
+UMD format 
+    Universal Module Definition
+    can be used both in the browser and in Node.js.
+-------------------------------------------------------------------------------------------------------------------------------
+

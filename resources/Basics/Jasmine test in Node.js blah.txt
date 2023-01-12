@@ -1,0 +1,45 @@
+create a simple Hello World web server
+practice our Jasmine test-writing skills on it.
+
+
+create an empty Node.js project
+(a) mkdir hello_world
+(b) cd hello_world
+(c) npm init
+	as soon as you type this command npm init ----------> then, Angular CLI will ask for some details to populate its package.json file
+	details like (name, version, entry point, author, license)
+(d) Now, set up two directories in our project’s root directory 
+	— one for the server’s source code (app folder)
+	— another one for the Jasmine test files. By convention, tests written in Jasmine are called specs (short for specification), and are stored inside the spec directory.
+(e) run these commands 
+	mkdir app
+	mkdir spec
+
+
+(a) npm install jasmine-node --save
+	For writing specifications, test-cases in Jasmine, we need to install its npm package
+	Once you install jasmine npm package ---> see package.json file....   automatically, its dependency is added 
+	
+	"dependencies": {
+			"jasmine-node": "^3.0.0"
+		}
+		
+(b) Do this too... dont know why
+	npm install request --save
+	npm install express --save
+	
+(c) Our jasmine-node is installed locally in the node_packages directory inside our project’s root directory. 
+	To run it, invoke its binary, and point it to our spec folder. 
+	./node_packages/.bin/jasmine-node spec
+	put this in package.json file... in "test":
+	
+	for some reason this is throwing error... dont know which of the either is correct
+	"test": "jasmine-node spec"
+	"test": "./node_packages/.bin/jasmine-node spec"
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TEST CASE 1 = we want to test on our server is 
+	whether it is returning the HTTP status OK (status code 200) when we send a GET request towards its root path.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

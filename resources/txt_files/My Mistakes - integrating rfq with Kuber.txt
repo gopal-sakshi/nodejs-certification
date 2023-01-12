@@ -1,0 +1,101 @@
+some commands I used
+
+
+npm uninstall node-sass
+npm install node-sass@4.0.0
+
+
+nvm list
+nvm install 10.19.0
+nvm use 10.19.0
+-----------------
+node -v 					//10.19.0
+ng serve = not recognised command 
+npm start 			(I used this instead)
+
+
+all those earlier errors got lost when I used nvm 10.19.0
+
+earlier errors
+- python not found
+- node-sass 6.0.0 incompatible with node-sass 4.0.0
+	something something
+	around 90min (or) 1.5hrs I struggled...
+- but when I called yeshwant, he simply asked me to use nvm 10 version and the issue got resolved...
+-----------------------------------------------------------------------------------------
+
+        this.addedProducts.forEach((key, index) => {
+          // key[attachment] = {this.prodAttachments[index]}
+          this.addedProdWithAttachment[index] = this.addedProducts[index];
+          this.addedProdWithAttachment[index].attachment = this.prodAttachments[index];
+        })
+		
+		added this in create-pre-rfq ts file...
+		what I noticed = addedProdWithAttachment & addedProducts both are same... both share same memory...
+		when I was checking for payload, I got this confirmation...
+		even though  I didnt add attachment property to addedProducts array... it got displayed in payload... 
+		
+	requirementFormForKuber.get('units') I gave... I raised PR, got it merged, deployed... got error... only to realise that it should've been
+	requirementFormForKuber.get('unit')
+-------------------------------------------
+
+// this was the code for deleting added elements...
+this.requirementDetails.removeAt(index);
+        this.addedProducts = this.requirementDetails.value;
+
+// I ignored requirementDetails... and processed addedProducts directly...
+// but that is a mistake... bcoz, even though u remove in addedProducts, requirementDetails still remain full (not deleted)  & next time all elements get added to addedProducts... think about it...
+        this.addedProducts.splice(index,1);
+	
+	
+let element of addedProducts; let index = index
+// this is what was originally there... index here correctly outputs as number
+// But I changed it to this below... 
+let element of addedProducts; let index of index
+// now, index shows full product... deleteProd() didnt work as intended...
+------------------------------------------
+
+bulk product... cart product... If user adds a bulk product, then he must be given a choice and if he accepts, exisiting regular items in cart will be removed... 
+I called this.removeCartItem(product)... but it never worked... 
+the control didnt go inside map() operator of that function removeCartItem()
+
+but when other parts of code called removeCartItem(), the control went into map() operator and actually did remove the product from cart... 
+
+I didnt understand why this was happening...
+
+why this.removeCartItem() didnt work when I called it from my function...
+why this.removeCartItem() worked when others called it...
+
+for this error, I almost spent 6hrs may be...
+I worked on this since friday afternoon in the office... didnt work
+okay 3-4pm 1hr - kuber demo by pradeep & vinay...
+then 5.30 - 6.30pm - friday activities...
+but I stayed till 7, 7.30pm... in the office...
+and say for like 30min I helped yeshwant in the asst rfq chat thingy...
+
+then I came home... started work at 8pm till 12midnight... with dinner break, bike round for priya & sahasra... small visit to aditya nilayam...
+before sleeping I tried to do it in kuber... 
+
+then I woke up in the morning and tried again... 
+out of desperation, last hope... I searched in google, this exact same string
+	"control not entering into map method of observable"
+	the stackoverflow answer that solved my issue is
+	https://stackoverflow.com/questions/40357753/rxjs-observable-map-not-executing
+	
+The map is never executed because it creates an observable that stays cold (no subscription). Add an empty subscribe() and it should work.
+
+
+So, the solution is 
+
+
+this.removeCartItem(product) 							-----> never works
+this.removeCartItem(product).subscribe()		----> 	WORKS
+-------------------------
+
+ONLY node 10.19.0 is added to PATH in envi variables
+if u want to use other nvm... do this...
+C:\Users\gopal\AppData\Roaming\nvm
+choose ur nvm version...
+navigate till this path (say 11.0.0)
+and this in envi variable
+C:\Users\gopal\AppData\Roaming\nvm\v11.0.0\node_modules\@angular\cli\bin

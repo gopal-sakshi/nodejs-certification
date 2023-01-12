@@ -1,0 +1,37 @@
+Browser JavaScript execution flow
+Node.js JavaScript execution flow =======> both of them based on an event loop.
+
+
+Event Loop
+- Its an endless loop, 
+    where the JavaScript engine waits for tasks, 
+    executes them and then sleeps,
+    waiting for more tasks.
+- general algorithm of the engine:
+    While there are tasks:
+        execute them, starting with the oldest task.
+    Sleep until a task appears, then go to 1.
+- 
+
+
+Examples of tasks:
+- When an external script <script src="..."> loads, the task is to execute it.
+- When a user moves their mouse, the task is to dispatch mousemove event and execute handlers.
+- When the time is due for a scheduled setTimeout, the task is to run its callback.
+…and so on.
+
+https://javascript.info/event-loop
+
+--------------------------------------------------------------------------------------------------------------
+https://nodejs.dev/learn/the-nodejs-event-loop
+
+
+The Node.js JavaScript code runs on a single thread. 
+- SINGLE THREAD =============> There is just one thing happening at a time.
+
+
+In most browsers there is an event loop for every browser tab, 
+    to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
+Its not like all tabs share a single event loop. 
+each browser tab ---> will have its own event loop
+--------------------------------------------------------------------------------------------------------------

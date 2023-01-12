@@ -1,0 +1,14 @@
+https://nodejs.dev/learn/get-http-request-body-data-using-nodejs
+
+
+when you initialize the HTTP server using http.createServer()
+    the callback is called ----> when the server got all the HTTP headers, but not the request body.
+    The request object passed in the connection callback 
+        ===> is a stream (or) request object is being transferred via chunks
+        ===> meaning, req.on() method gets called everytime a chunk of request object is received
+We first get the data by listening to the stream data events
+    and when the data ends, the stream end event is called once
+
+    let data = '';
+    req.on('data', chunk => { data += chunk;}                   // req.on ---> get executed everytime a new chunk is received
+    req.on('end' ()=> {console.log(JSON.parse(data))});         // req.on('end') ---> called when stream is completed

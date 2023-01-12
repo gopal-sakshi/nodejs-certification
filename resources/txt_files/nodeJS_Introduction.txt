@@ -1,0 +1,93 @@
+Intro
+- Node.js allows you to run JavaScript on the server.
+- Node.js files must be initiated in the "Command Line Interface" program of your computer.
+- open source, runs on various OS (windows, linux)
+- it uses javascript for writing server-side language
+	It allows us to CRUD operations on files/folders on server
+	JS used to run on browsers (client side); but now with node.js we can run javascript anywhere
+
+node --version
+npm --version
+
+Chrome V8 engine
+- high performance JS engine,written in C++ and used in google chrome
+- node.Js is written in C++
+- job of javascript engine = convert javascript codee into machine code (assembly language) which the machine understands
+	javascript code is understood by browser
+	there is a wrapper around v8 engine... this wrapper is used by node.js... 
+	so, node.js takes in JS code, converts into machine code
+
+
+(a) Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser
+(b) A Node.js app runs in a single process, without creating a new thread for every request
+(c) When Node.js performs an I/O operation, like 
+	reading from the network, 
+	accessing a database or the filesystem, 
+	instead of blocking the thread & wasting CPU cycles waiting -------> Node.js will resume the operations when the response comes back.
+	This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency
+(d) Vast Number of Libraries
+	npm with its simple structure helped the ecosystem of Node.js proliferate
+	npm registry hosts over 1,000,000 open source packages you can freely use
+(e) Now, Node.js 16 is latest version (as of 2021)
+
+
+(a) Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser
+(b) A Node.js app runs in a single process, without creating a new thread for every request
+(c) When Node.js performs an I/O operation, like 
+	reading from the network, 
+	accessing a database or the filesystem, 
+	instead of blocking the thread & wasting CPU cycles waiting -------> Node.js will resume the operations when the response comes back.
+	This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency
+(d) Vast Number of Libraries
+	npm with its simple structure helped the ecosystem of Node.js proliferate
+	npm registry hosts over 1,000,000 open source packages you can freely use
+(e) Now, Node.js 16 is latest version (as of 2021)
+
+
+https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
+
+
+Node.js
+- open-source, cross-platform runtime environment 
+- allows developers to create all kinds of server-side tools & applications in JavaScript. 
+- The runtime is intended for use outside of a browser context (running directly on a computer or server OS). 
+	As such, the environment omits browser-specific JavaScript APIs... adds support for more traditional OS APIs including HTTP & file system libraries.
+
+---------------------------------------------------------------------------------------------------------------
+Features of Node.js
+(a) Asynchronous & Event Driven = 
+	a Node.js based server never waits for an API to return data.
+	The Node.js server moves to the next API after calling it...
+	The (notification mechanism of Events of Node.js) helps the Node.js server to get a response from the previous API call.
+(b) Node.js uses a single threaded model with event looping
+	The same Node.js program can provide service to a much larger number of requests 
+	traditional servers like Apache HTTP Server cant do so
+----------------------------------------------------------------------------------------------------------------
+A Node.js application consists of THREE important components −
+(a) Import required modules − require
+(b) Create server − A server which will listen to client's requests (similar to Apache HTTP Server)
+(c) Read request and return response − 
+	The server created in an earlier step will read the HTTP request made by the client 
+	the client can be a browser or a console 
+	then, return the response.
+	
+--------------------------------------------------------------------------------------------------------------
+
+Why Node.js
+- Node.js uses asynchronous programming
+- PHP & ASP = waits for the request
+- Node.js eliminates the need for waiting... it sends the request to server and goes on processing next request... when server responds, it dynamically updates the page...
+- free & open source
+- Node.js represents javascript everywhere
+-  its fast
+	v8 js engine (chromium project)
+	single threaded (all operations on single thread... no need to waste CPU in thread-switching)
+	non-blocking (multiple requests can be handled... no need to wait for one)
+	async programming (all calls are individual
+
+
+Node Benefits
+- Great performance (running on V8 engine)
+- Code is written in plain old JavaScript (less time is spent dealing with "context shift" between languages when you're writing both client-side and server-side code)
+- node package manager (NPM) provides access to hundreds of thousands of reusable packages.
+------------------------------------------------------------------------------------------------------------

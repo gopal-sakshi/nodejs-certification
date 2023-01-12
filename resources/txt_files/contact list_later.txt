@@ -1,0 +1,49 @@
+MEAN application
+- MongoDB
+- Express framework
+- Angular
+- NodeJs
+- we arent doing it now... we will do it LATER
+
+
+setting up db
+- see how to setup mongoDB from databases folder
+---------------------------------------------------------------------------------------------------------------------------------
+
+(a) npm init
+It asks for project name, description, github link, author name, entry point
+creates package.json file with above details populated
+
+(b) npm install express --save
+installs express module (and this is added in package.json file as a dependency)
+
+(c) npm install mongoose cors body-parser --save
+
+mongoose = Object Document Mapper for using MongoDB
+body-parser = to parse incoming json data
+cors (cross origin resource sharing) = 
+	server code @ port 3000
+	client code @ port 4200
+	thats why we need to enable cors (so that we dont get any error)
+	
+-------------------------------------------------------------------------------------------------------------------------------
+
+Learnings
+(a) (ERROR) Property has no initializer and is not definitely assigned in the constructor
+	- either initialize the property in the constructor
+	- (or)  tell typescript that this variable will have a value at runtime
+		first_name: string; 		-----------------> 				first_name!: string;	(meaning that first_name will have value @ runtime)
+	- (or) Just go to tsconfig.json and set "strictPropertyInitialization": false
+
+ 
+
+--------------------------------------------------------------------------------------------------------------------------------
+contact.service.ts						write data retrieving logic 
+contacts.component.ts				create template & logic
+contact.ts									Schema for our CONTACT with 4 properties (id, first_name, last_name, phone)
+
+import http module into contact.service.ts (getting data using http protocol)
+
+Angular by default returns Observable object
+
+----------------------------------------------------------------------------------------------------------------------------------

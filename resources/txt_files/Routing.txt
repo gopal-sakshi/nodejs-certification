@@ -1,0 +1,17 @@
+Routing
+- determining how an application responds to a client request to a particular endpoint, 
+    endpoint = URI & specific HTTP request method (GET, POST).
+- Each route can have one or more handler functions, which are executed when the route is matched.
+
+Route definition takes the following structure/SYNTAX:
+- app.METHOD(PATH, HANDLER)
+    app = instance of express
+    METHOD = get, put, delete, post
+    PATH = path on the server
+    HANDLER = this function is executed when the route is matched.
+
+
+
+
+
+

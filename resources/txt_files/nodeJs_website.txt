@@ -1,0 +1,41 @@
+Run NodeJS Program
+- node app.js
+-----------------------------------------------------------------------------------------------------------------------
+Exit NodeJS program
+- Ctrl+C
+- process.exit()            // anywhere in your code block
+    you dont need to import process module using 'require' keyword... its available
+
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => {
+  res.send('Hi!')
+})
+
+app.listen(3000, () => console.log('Server ready'))
+    // app.listen() returns an instance of http             (this uses http module)
+    // use https.createServer if you needed to serve your app using HTTPS
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Read ENVI variables
+
+process core module of Node.js
+- provides the env property = which hosts all the environment variables
+- see NodeJS/practice_stuff/practice23.js
+
+Node in REPL
+
+(A) node app.js         // runs app.js program
+(B) node                // opens node in REPL mode (Read Evaluate Print Loop)
+    enter the name of a JavaScript class, like Number, add a dot and press tab (lists all properties of Number class)
+    global. (press tab)     inspect all global objects
+-----------------------------------------------------------------------------------------------------------------------
+
+Accept arguments
+
+node app.js joe
+node app.js name="joe"
+
+use the 'process object' to retrieve arguments

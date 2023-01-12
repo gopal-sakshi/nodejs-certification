@@ -1,0 +1,64 @@
+Microprocessor
+- very small machine
+- work in tandem with electrical inputs
+- we give microprocessor instructions in some language
+	IA-32
+	x86-64
+	ARM
+	MIPS
+- microprocessor carries those instructions
+	- these instructions are called (machine code) (machine language)
+- EVERY program we run on computer has converted (compiled) into machine code
+	
+	
+example of machin code
+		
+		
+		
+machine code vs assembly code
+- Machine language & assembly language are both low-level languages
+- machine code is below assembly in the hierarchy of computer languages. 
+- Assembly language includes human-readable commands, 
+	such as mov, add, sub, push
+- while machine language does not contain any words or even letters
+	only bits (1 & 0s)
+	
+---------------------------------------------------------------------------
+a) The processor looks at machine instructions in main memory one after another, 
+b) And performs one machine operation for each machine instruction.
+
+Machine Instruction							Machine Operation
+00000000										Stop Program
+00000001										Turn bulb fully on
+00000010										Turn bulb fully off
+00000100										Dim bulb by 10%
+00001000										Brighten bulb by 10%
+00010000										If bulb is fully on, skip over next instruction
+00100000										If bulb is fully off, skip over next instruction
+01000000										Go to start of program (address 0)
+
+https://chortle.ccsu.edu/java5/notes/chap04/ch04_4.html
+
+
+Address			Machine Instruction
+0							00000001
+1							00000010
+2							00000001
+3							00000010
+.... so on ....
+
+
+executing address 0 (meaning machine instruction 00000001)
+executing address 1 (meaning machine instruction 00000010)
+... so on...
+---------------------------------------------------------------------------
+
+sample assembly code
+; = start of comment
+
+mov	ax,'00'								; initialize to all ASCII zeroes
+mov	di,counter							; including the counter
+mov	cx,digits+cntDigits/2		; two bytes at a time
+cld													; initialize from low to high memory
+rep	stosw										; write the data
+---------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+Most of Node’s objects — HTTP requests, responses, streams 
+- implement the EventEmitter module 
+- so they can provide a way to emit and listen to events.
+
+
+
+The original way Node handled asynchronous events was with callback. 
+- This was a long time ago, before JavaScript had native promises support & async/await feature.
+- Callbacks are basically just functions that you pass to other functions.
+- This is possible in JavaScript because functions are first class objects.
+    just like we pass number, strings as arguments/parameters... we pass functions as parameters to other functions
+- It’s important to understand that callbacks do not indicate an asynchronous call in the code. 
+    A function can call the callback both synchronously & asynchronously.

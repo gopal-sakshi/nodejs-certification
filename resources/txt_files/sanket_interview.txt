@@ -1,0 +1,6 @@
+how are you validating params in backend
+for req.body... we can use express.validator
+it seems, we also need to use some 3rd party validator for params...
+
+how are you debugging
+cloudwatch... what other options ???

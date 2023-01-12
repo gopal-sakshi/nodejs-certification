@@ -1,0 +1,4 @@
+use --inspect flag
+- listens on default address & port (127.0.0.1:9229)
+- never have the debugger listen on a public IP address
+

@@ -1,0 +1,128 @@
+Modules in NodeJS
+- same as JavaScript libraries.
+- Node.js has a set of built-in modules... To include a module, use the require() function with the name of the module:
+- (or) you can create your own modules, and easily include them in your applications.
+- Some modules are 
+	http
+	fs
+	url
+
+--------------------------------------------------------------------------------------------------------------
+HTTP module
+- Node.js has a built-in module called HTTP
+- allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).
+- HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
+- properties/methods
+	createServer( some_func() ) method = to create an HTTP server:
+	some_func() is passed into the http.createServer() method
+	it will be executed when one accesses the computer on port 8080.
+	if you include an HTTP header = response from the HTTP server is displayed as HTML
+
+
+(A) some_func() is like this... it takes 2 arguments - req & res
+- (req, res) ==> {... } ----> Its an arrow function... it is passed into http.createServer() method
+- req
+	1st argument
+	its a request from the client
+	this object has properties = req.url
+- res
+	2nd argument
+	it seems its the response we send to client
+	this object has properties = res.writeHead()		// 1st argument of writeHead() = status code, 200 means that all is OK
+														// 2nd argument = object containing the response headers.
+
+--------------------------------------------------------------------------------------------------------------
+Node.js DNS module
+- contains methods to get information of given hostname.
+- like info about www.javatpoint.com (or) 
+	info about local host (loop back server, ie local host server @ 127.0.0.1)
+--------------------------------------------------------------------------------------------------------------
+Node.js (NET module)
+- provides the ability to perform socket programming
+- create chat application or communicate client and server applications using socket programming in Node.js
+---------------------------------------------------------------------------------------------------------------
+Node.js Crypto module 
+- supports cryptography
+- (encryption using HASH)
+	createHMAC() method -----------------> HMAC = Hash-based Message Authentication Code 
+- (encryption using Cipher)
+	crypto.createCipher() method
+---------------------------------------------------------------------------------------------------------------
+Node.js provides (Process module)
+- to get process information such as process id, architecture, platform, version, release, uptime, cpu usage 
+- used to kill process, set uid, set groups, unmask
+- The process is a global object, an instance of EventEmitter, can be accessed from anywhere.
+
+${process.cwd()} 			prints current directory
+${process.uptime()}			returns Node js uptim
+---------------------------------------------------------------------------------------------------------------
+Node.js (Child Process)
+- provides the ability to spawn child processes in a similar manner to popen(3).
+
+3 major ways to create child process:
+(a) child_process.exec() method
+	runs a command in a console and buffers the output.
+(b) child_process.spawn() method
+	launches a new process with a given command.
+(c) child_process.fork() method
+	special case of spawn() method to create child processes.
+
+-------------------------------------------------------------------------------------------------------------
+JSON web tokens = one way to implement authentication
+
+
+---------------------------------------------------------------------------------------------------------------
+
+file system module
+- fs.open() method takes a "flag" as the second argument
+	w = writing
+- fs.writeFile() method 
+	replaces the specified file & content if it exists. 
+	If the file does not exist, a new file, containing the specified content, will be created:
+
+--------------------------------------------------------------------------------------------------------------
+
+url module
+url = http://localhost:8080/default.htm?year=2017&month=february
+
+host = localhost:8080
+pathname = /default.htm
+search = ?year=2017&month=february
+
+--------------------------------------------------------------------------------------------------------------
+
+Formidable Module
+- create a webpage in node.js... 
+- lets the user upload files to your computer...
+
+--------------------------------------------------------------------------------------------------------------
+Utility modules
+- These modules are very common & are frequently used while developing any Node based application.
+- They are
+	OS module
+	Path module
+	net module
+	DNS module
+	domain module
+	
+
+(A) OS Module = Provides basic operating-system related utility functions.
+	os.tmpdir() = Returns the operating system's default directory for temp files.
+	os.hostname() = Returns the hostname of the operating system.
+
+(B) Path Module = Provides utilities for handling and transforming file paths.
+
+(C) Net Module
+	Provides both servers & clients as streams. 
+	Acts as a network wrapper.
+	to create both servers and clients.
+	
+	net.createServer() 					creates a new TCP server
+
+(D) DNS Module = Provides functions to do actual DNS lookup as well as to use underlying operating system name resolution functionalities.
+	dns.lookup()							resolves a hostname
+	dns.lookupService() 				resolves given address & port into hostname
+
+(E) Domain Module = Provides ways to handle multiple different I/O operations as a single group.
+
+-------------------------------------------------------------------------------------------------------------

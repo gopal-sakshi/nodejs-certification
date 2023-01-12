@@ -1,0 +1,41 @@
+NodeJS Errors
+
+(A) Standard JavaScript errors = 
+	<EvalError>
+	<SyntaxError>
+		not valid JS code
+		these errors are identified only bcoz of code evaluation... 
+	<RangeError> 
+		provided argument was not within the set or range of acceptable values for a function;
+		require('net').connect(-1)							// error, bcoz 0 < PORT < 65536
+	<ReferenceError> 						 say if a variable is undefined (not declared)
+	<TypeError>								provided argument is not an allowable type
+	<URIError> 
+
+(B) System errors
+	when exceptions occur within its runtime environment
+	when an application violates an operating system constraint 
+		(Address already in use) 
+		(access a file in a way forbidden by its file access permissions) 
+		(read a file that doesnt exist)
+	
+(C) User-specified errors
+	 
+	 
+(D) Assertion errors
+	NodeJS comes with an assert class as part of its core modules set, allowing simple assertion tests to be performed. 
+	When such an assertion fails an AssertionError is thrown
+
+ENONET error = Error NO ENTry
+
+Exceptions
+- exception is a value that is thrown as a result of an invalid operation (or)
+	as the target of a throw statement. 
+- these values may not be instances of Error or classes which inherit from Error
+- Some exceptions are unrecoverable at the JavaScript layer. 
+	Such exceptions will always cause the NodeJS process to crash. Examples include assert() checks or abort() calls in the C++ layer.
+
+Errors
+- all exceptions thrown by NodeJS or the JavaScript runtime will be instances of Error.
+- 
+--------------------------------------------------------------------------------------------------------------

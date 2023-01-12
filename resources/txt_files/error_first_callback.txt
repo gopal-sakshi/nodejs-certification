@@ -1,0 +1,9 @@
+Node.js style
+- where the first argument to the callback is always reserved for an error.
+- Having the first argument be the error is a simple convention 
+    encourages you to remember to handle your errors. 
+    If it was the second argument you could write code like 
+        function handleFile (file) { ... } 
+        and more easily ignore the error.
+    CORRECT = function handleFile(error, file) { ... }
+---------------------------------------------------------------------------------------------------------

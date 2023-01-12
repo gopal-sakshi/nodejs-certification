@@ -1,0 +1,26 @@
+A Node application runs in a single process. 
+Node does not create a new thread for every request, as is often the case with traditional server-side programs. 
+In this way, a Node server can handle thousands of concurrent connections without having to deal with 
+    thread concurrency issues 
+    or the overhead multithreading brings.
+
+
+Node.js is event-driven and runs asynchronously. 
+Code written for the Node environment does not follow the traditional model of receive, process, send, wait, receive found in other systems. 
+Instead, Node implements an event loop 
+- that processes incoming requests as they stack up in the event queue, 
+- handling small requests one after the other without waiting for responses.
+
+
+This is a shift away from mainstream models
+- that run larger, more complex operations, process several threads concurrently
+- with each thread waiting for its appropriate response before moving on.
+
+Node does not block input/output (I/O) operations like more traditional approaches. 
+This is in large part because Node functions do not perform I/O directly, which helps eliminate the potential for blocking
+
+----------------------------------------------------------------------------------
+
+where node is bad
+- run a processor-intensive web application that requires heavy server-side computations
+- 

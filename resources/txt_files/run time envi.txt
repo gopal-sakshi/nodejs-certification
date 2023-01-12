@@ -1,0 +1,84 @@
+NodeJS Runtime
+- software stack 
+- responsible for installing your 
+    web service's code 
+    and its dependencies 
+- and running your service
+
+Runtime envi
+- hardware & software infrastructure 
+- that supports the running of a particular codebase in real time
+- DLL Hell
+    DLLS = used as resources for applications in runtime execution. 
+    programs were linked to DLLs and shared these libraries, it became common for one or more applications to fail because of lack of access
+
+Changing Environments
+- traditional = a runtime environment was based on a specific hardware setup (CPU, OS)
+    How much RAM, what version of node, what operating system, how much CPU cores, can all be referenced
+- now with virtualization = a runtime environment can be a virtual machine instead of a physical machine. 
+    Resources can be allocated relatively on-the-fly.
+
+Errors that occur during runtime
+- some are due to runtime environment ===> 
+    invalid instruction (program doesn't have the right access to a library or reference)
+- some are not bcoz of runtime envi
+    but bcoz how a code is written ===> logical errors, out of bounds errors
+
+
+
+---------------------------------------------------------------------------------------------------
+
+https://www.sciencedirect.com/topics/computer-science/runtime-environment
+
+Environment constraints are imposed by the runtime environment of the SUT. 
+- For example, tester may want to ensure a web application executes correctly in different web browsers running on different operating systems. 
+- In this scenario, tests are combinations of web browsers and operation systems. 
+    Safari 6.0 or later cannot be executed on Windows. 
+    If the web browser is Safari 6.0 or later, the operating system cannot be Windows. 
+- Therefore, no test should contain the combination of {Safari6, Windows}. 
+- In general, combinations that violate environment constraints could never occur at runtime and must be excluded from a test set.
+
+System constraints are imposed by the semantics of the SUT. 
+- For example, a hotel reservation system may impose a constraint that 
+    the number of guests in a room must be no more than the number of available beds. 
+- Note that invalid combinations which do not satisfy system constraints may still be rendered to the SUT at runtime. 
+- If this happens, these invalid combinations should be properly rejected by the SUT. 
+- Therefore, it is important to test these combinations for the purpose of robustness testing, 
+    ie, making sure that the SUT is robust when invalid combinations are presented. 
+- In order to avoid potential mask effects, robustness testing often requires that each test contains only one invalid combination.
+
+The key difference between environment constraints and system constraints is that environment constraints must be satisfied by all the tests whereas tests that do not satisfy system constraints may be generated for robustness testing
+------------------------------------------------------------------------------------------------------------------------------------
+
+PHP
+- It is one of the more common runtime environments that people add to a Web server
+- This processing language is similar in many ways to ASP. 
+
+
+Google AppEngine
+- It is a scalable runtime environment mostly devoted to executing Web applications
+
+
+Web container
+- It is the runtime environment for Web component. 
+- It serves as an entry point of most client requests to J2EE applications that are running on the J2EE Engine.
+- It provides services such as request processing, authenticating the users, authorizing users to access certain resources,
+
+
+
+The Windows Azure runtime environment 
+- provides a scalable compute & storage hosting environment along with management capabilities. 
+- It has three major components: Compute, Storage, Fabric Controller.
+
+
+Binary Runtime Environment for Wireless (BREW)
+- Qualcomm created BREW for its CDMA phones. 
+- However, BREW is not constrained to just Qualcomm phones.
+- Instead, BREW is an environment designed to run on any OS that simplifies development of wireless applications
+------------------------------------------------------------------------------------------------------------------------------------
+
+scalable
+- depending on need, its size can increase (or) decrease
+- most AWS features are scalable... on black friday, traditional servers wont be able to handle
+
+------------------------------------------------------------------------------------------------------------------------------------

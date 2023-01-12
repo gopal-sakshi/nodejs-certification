@@ -1,0 +1,17 @@
+REST stands for REpresentational State Transfer.
+- Here, every component is a resource 
+- And a resource is accessed by a common interface using HTTP standard methods.
+
+A REST Server simply provides access to resources
+REST client accesses & modifies the resources using HTTP protocol.
+Here each resource is identified by URIs/ global IDs
+
+--------------------------------------------------------------------------------------------------------------
+4 HTTP methods are commonly used in REST based architecture.
+
+GET − This is used to provide a read only access to a resource.
+PUT − This is used to create a new resource.
+DELETE − This is used to remove a resource.
+POST − This is used to update a existing resource or create a new resource.
+
+------------------------------------------------------------------------------------------------------------

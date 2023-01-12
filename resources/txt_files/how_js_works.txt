@@ -1,0 +1,4 @@
+js - has single call stack
+- not multiple call stacks
+
+ruby = single threaded
