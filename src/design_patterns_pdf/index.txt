@@ -1,0 +1,37 @@
+Chapter 1
+Node.js Design Fundamentals
+reactor pattern
+the callback pattern
+the module pattern
+the observer pattern.
+
+Chapter 2
+Asynchronous Control Flow Patterns
+how to mitigate the "callback hell" problem using plain JavaScript
+the async library
+Promises & Generators.
+
+
+Chapter 3
+Coding with Streams
+how to process data with transform streams and 
+how to combine them into different layouts.
+
+Chapter 4
+Design Patterns = traditional design patterns in Node.js
+popular conventional design patterns and shows you how unconventional they might look in Node.js.
+
+Chapter 5
+Wiring Modules solutions for linking the modules of an application together
+learn design patterns such as Dependency Injection and Service locator.
+
+Chapter 6
+Recipes = some common coding and design challenges
+
+Chapter 7
+Scalability & Architectural Patterns = basic techniques and patterns for scaling a Node.js application.
+
+Chapter 8
+Messaging and Integration Patterns
+most important messaging patterns
+build & integrate complex distributed systems using ZMQ and AMQP.
