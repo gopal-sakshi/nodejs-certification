@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import { readFile, readFileSync } from 'fs';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const withTryCatch = () => {
   try {

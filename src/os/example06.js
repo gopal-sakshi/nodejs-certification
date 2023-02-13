@@ -4,7 +4,7 @@
 
 /** Require generics dependences */
 import os from 'os';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Show Platform.
 console.log(os.platform());

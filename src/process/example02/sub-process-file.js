@@ -5,7 +5,7 @@
 /** Require generics dependences */
 import fs from 'fs';
 import path from 'path';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const __dirname = path.resolve();
 

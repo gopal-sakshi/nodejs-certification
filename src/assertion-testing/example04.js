@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import { strict } from 'assert';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 /** Define objects */
 const obj1 = {

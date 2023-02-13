@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 console.log('Arguments', process.argv);
 

@@ -6,7 +6,7 @@
 /** Import generics dependences */
 import inspector from 'inspector';
 import fs from 'fs';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 /** Define configuration */
 const config = {

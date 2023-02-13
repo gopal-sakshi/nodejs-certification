@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import https from 'https';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Create request method.
 const req = https.request({

@@ -3,7 +3,7 @@
  */
 
 /** Import generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const phrase = 'Hi from Node JS';
 

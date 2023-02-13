@@ -4,7 +4,7 @@
  */
 
 /** Import generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 /**
  * 0 if they are equal

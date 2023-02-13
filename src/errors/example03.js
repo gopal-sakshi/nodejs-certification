@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import { readFile } from 'fs';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 readFile('/any.file', (err, data) => {
   if (err) {

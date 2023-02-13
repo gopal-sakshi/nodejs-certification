@@ -4,7 +4,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+// // import 'pretty-console-colors';
 
 process.on('multipleResolves', (type, promise, reason) => {
   console.error(type, promise, reason);

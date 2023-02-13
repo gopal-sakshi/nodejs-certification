@@ -3,7 +3,7 @@
  */
 
 /** Import generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const numberA = 1234567890.99;
 const intlAA = new Intl.NumberFormat('en').format(numberA);

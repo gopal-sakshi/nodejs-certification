@@ -4,7 +4,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+// // import 'pretty-console-colors';
 
 console.log(`process.getegid(): ${process.getegid()}`); // Method returns the numerical effective group identity of the Node.js process.
 console.log(`process.geteuid(): ${process.geteuid()}`); // Method returns the numerical effective user identity of the process.

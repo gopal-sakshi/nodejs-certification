@@ -4,7 +4,7 @@
 
 /** Require generics dependences */
 import net from 'net';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Create Server Net.
 const server = net.createServer((socket) => {

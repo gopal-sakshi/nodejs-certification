@@ -6,7 +6,7 @@
 /** Import generics dependences */
 import https from 'https';
 import { strict } from 'assert';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 /** Define http request */
 const httpsRequest = async (endpoint) => {

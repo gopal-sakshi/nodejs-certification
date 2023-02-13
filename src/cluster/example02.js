@@ -7,7 +7,7 @@ import cluster from 'cluster';
 import http from 'http';
 import os from 'os';
 
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Define server http port.
 const PORT = 8000;

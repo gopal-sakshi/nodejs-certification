@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+// // import 'pretty-console-colors';
 
 process.on('beforeExit', (code) => {
   console.log('Process beforeExit event with code: ', code);

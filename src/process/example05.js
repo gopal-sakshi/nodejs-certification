@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 process.on('unhandledRejection', (reason, promise) => {
   console.warn('unhandledRejection', reason, promise);

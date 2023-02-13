@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import { spawn } from 'child_process';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Launch spawn function and get buffer result.
 const fncSpawn = () => {

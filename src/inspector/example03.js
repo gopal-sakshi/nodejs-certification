@@ -5,7 +5,7 @@
 
 /** Import generics dependences */
 import inspector from 'inspector';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 /** Define configuration */
 const config = {

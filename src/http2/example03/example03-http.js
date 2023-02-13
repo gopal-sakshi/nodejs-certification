@@ -8,7 +8,7 @@
 import http from 'http';
 import fs from 'fs';
 import path from 'path';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const __dirname = path.resolve();
 

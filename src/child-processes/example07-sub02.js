@@ -3,7 +3,7 @@
  */
 
 /** Import generics dependences */
-// import 'pretty-console-colors';
+// // import 'pretty-console-colors';
 
 process.on('message', (m) => {
   console.log('CHILD SUB02 got message:', m);

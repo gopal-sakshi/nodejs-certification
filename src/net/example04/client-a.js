@@ -4,7 +4,7 @@
 
 /** Require generics dependences */
 import net from 'net';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 const client = net.createConnection({
   host: '127.0.0.1',

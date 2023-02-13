@@ -3,7 +3,7 @@
  */
 
 /** Import generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Get if one const is or not a Buffer.
 const str = 'Hi from NodeJS';

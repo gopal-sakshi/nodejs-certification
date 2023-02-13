@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 process.on('uncaughtException', (err, origin) => {
   console.warn('uncaughtException', err, origin);

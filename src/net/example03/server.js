@@ -5,7 +5,7 @@
 
 /** Require generics dependences */
 import net from 'net';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Define main variables.
 let server;

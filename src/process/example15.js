@@ -4,6 +4,6 @@
  */
 
 /** Require generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 console.log(process.memoryUsage());

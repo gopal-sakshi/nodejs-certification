@@ -4,7 +4,7 @@
 
 /** Import generics dependences */
 import http from 'http';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Get http methods.
 console.log(http.METHODS);

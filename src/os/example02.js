@@ -4,7 +4,7 @@
 
 /** Require generics dependences */
 import os from 'os';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Show free memory.
 console.log(`Free Memory -> ${os.freemem()}`);

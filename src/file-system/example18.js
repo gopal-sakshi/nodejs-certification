@@ -6,7 +6,7 @@
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Get temp operative system foler.
 const tmpDir = os.tmpdir();

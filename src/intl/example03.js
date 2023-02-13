@@ -3,7 +3,7 @@
  */
 
 /** Import generics dependences */
-import 'pretty-console-colors';
+// import 'pretty-console-colors';
 
 // Get format with english format.
 const dateA = new Date('01/06/20');
