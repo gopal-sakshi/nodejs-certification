@@ -8,44 +8,30 @@ import https from 'https';
 import { strict } from 'assert';
 // import 'pretty-console-colors';
 
-/** Define http request */
 const httpsRequest = async (endpoint) => {
   return new Promise((resolve, reject) => {
     https.get(endpoint, (res) => {
       let data = '';
-      res.on('data', (d) => {
-        data += d;
-      });
-      res.on('end', () => {
-        resolve(data);
-      });
-    }).on('error', (e) => {
-      reject(e);
-    });
+      res.on('data', (d) => { data += d; });
+      res.on('end', () => { resolve(data); });
+    }).on('error', (e) => { reject(e); });
   });
 };
 
 console.group('GROUP \n');
 
-(async () => {
-  // These request return reject for wrong url.
+(async () => {  
   try {
-    await strict.rejects(
-      async () => {
-        const urlRequest = 'https://jsonplaceholder.typcode.com/posts/1';
-        try {
-          await httpsRequest(urlRequest);
-        } catch (err) {
-          throw new TypeError('Wrong value');
-        }
-      }
-    );
+    await strict.rejects( async () => {
+      const urlRequest = 'https://jsonplaceholder.typcode.com/posts/1';
+      try { await httpsRequest(urlRequest); } 
+      catch (err) { throw new TypeError('Wrong value'); }
+    });
     console.info('[PASSED] http request with reject!');
   } catch (err) {
     console.error(err);
   }
 
-  // These objects contains equals structure and values.
   try {
     const post = {
       userId: 1,
@@ -61,8 +47,7 @@ console.group('GROUP \n');
   } catch (err) {
     console.error(`[FAIL] Expected > ${err.expected} | Actual > ${err.actual}`);
   }
-
-  // These objects contains equals structure and values.
+  
   try {
     const urlRequest = 'https://jsonplaceholder.typicode.com/posts/1';
     const request = await httpsRequest(urlRequest);
@@ -75,8 +60,7 @@ console.group('GROUP \n');
   } catch (err) {
     console.error(`[FAIL] Expected > ${err.expected} | Actual > ${err.actual}`);
   }
-
-  // These objects NO contains equals structure.
+  
   try {
     const post = {
       userId: 1,

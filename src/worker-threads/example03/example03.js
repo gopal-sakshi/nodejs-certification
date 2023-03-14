@@ -16,10 +16,5 @@ const workerB = new Worker(`${__dirname}/src/worker-threads/example03/task-b.js`
 console.log(`threadId of workerA ===> ${workerA.threadId}`);
 console.log(`threadId of workerB ===> ${workerB.threadId}`);
 
-workerA.on('message', (data) => {
-  console.log(`Message from workerA -> ${data}`);
-});
-
-workerB.on('message', (data) => {
-  console.log(`Message from workerB -> ${data}`);
-});
+workerA.on('message', (data) => { console.log(`Message from workerA -> ${data}`); });
+workerB.on('message', (data) => { console.log(`Message from workerB -> ${data}`); });

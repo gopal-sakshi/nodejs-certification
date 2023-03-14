@@ -4,6 +4,7 @@
 - node src/worker-threads/example01.js
 ------------------------------------------------------------------------------------------------------------------------
 
+
 import { 
     Worker, 
     isMainThread,
@@ -17,12 +18,15 @@ if(isMainThread) {                                                      // if it
 }
 workerA.on('message', callBackFunction23);                  // parent subscribing to messages from workerThread
 workerB.on('message', callBackFunction24);                  // parent subscribing to messages from workerThread
-// Note: all 3 threads ----> 1 main thread, workerA, workerB =====> all run on same process.pid
+
+workerA.postMessage
 
 `worker file`
 parentPort.postMessage(data);                               // when parent sends 'data' to worker
 parentPort.on('message', async (data) => {});               // when worker receives 'data' object from parent (or) 
                                                                 // worker subscribing to messages from parentPort
+
+// Note: all 3 threads ----> 1 main thread, workerA, workerB =====> all run on same process.pid
 
 ------------------------------------------------------------------------------------------------------------------------
 # Worker Threads
@@ -36,7 +40,7 @@ parentPort.on('message', async (data) => {});               // when worker recei
 - Node.js uses two kinds of threads: 
     a main thread handled by the event loop 
     and several auxiliary threads in the worker pool.
-- The event loop is the mechanism that takes callbacks (functions) and registers them to be executed at some point in the future. 
+- The event loop is the mechanism that takes callbacks (functions) & registers them to be executed at some point in the future. 
 - It operates in the same thread as the proper JavaScript code. 
     When a JavaScript operation blocks the thread, the event loop is blocked as well.
 - The worker pool is an execution model that spawns & handles separate threads, 
