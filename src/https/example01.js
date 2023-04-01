@@ -22,56 +22,25 @@ const server = https.createServer({
   cert: fs.readFileSync(`${__dirname}/src/http2/localhost-cert.pem`),
 });
 
-// Set listen function and set config.
-server.listen(config, () => {
-  console.log(`🚀 Server   | Running on: ${config.host} and port: ${config.port}`);
-});
-// [1] Server Event for show listening server.
-server.on('listening', () => {
-  console.log('👂 Server   | Listening\n');
-});
-// [2] Server Event for show connection http.
-server.on('connection', () => {
-  console.log('🔗 Server   | Connection ⤵️');
-  console.log('---------- | -------------');
-});
-// [-] Server Event if server has an error.
-server.on('close', () => {
-  console.log('🚪 Server   | Close');
-});
-// [-] Server Event if server has an error.
-server.on('error', (err) => {
-  console.log('❌ Server   | Error', err);
-});
-// [3] Server Event when received and request http.
+
+server.listen(config, () => { console.log(`Server   | Running on: ${config.host} and port: ${config.port}`); });
+server.on('listening', () => { console.log('Server   | Listening\n'); });
+server.on('connection', () => { console.log('Server   | Connection ⤵️'); console.log('---------- | -------------'); });
+server.on('close', () => { console.log('Server   | Close'); });
+server.on('error', (err) => { console.log('Server   | Error', err); });
+
 server.on('request', (request, response) => {
-  console.log('👉 Server   | Request ⤵️');
 
-  request.on('resume', () => {
-    console.log('👀 Request  | Resume ⤵️');
-  });
-  request.on('data', () => {
-    console.log('👀 Request  | Data ⤵️');
-  });
-  request.on('end', () => {
-    console.log('👀 Request  | End ⤵️');
+  console.log('Server   | Request ⤵️');
 
-    // Set statusCode and data for end response.
-    response.end(null, 'utf8', () => {
-      console.log('👀 Response | End ⤵️');
-    });
+  request.on('resume', () => { console.log('Request  | Resume ⤵️'); });
+  request.on('data', () => { console.log('Request  | Data ⤵️'); });
+  request.on('end', () => { 
+    console.log('Request  | End ⤵️');
+    response.end(null, 'utf8', () => { console.log('Response | End ⤵️'); });
   });
-  request.on('close', () => {
-    console.log('🚪 Request  | Close ⤵️');
-  });
-  request.on('error', () => {
-    console.log('❌ Request  | Error');
-  });
-
-  response.on('close', () => {
-    console.log('🚪 Response | Close 🏁');
-  });
-  response.on('finish', () => {
-    console.log('👈 Response | Finish ⤵️');
-  });
+  request.on('close', () => { console.log('Request  | Close ⤵️'); });
+  request.on('error', () => { console.log('Request  | Error'); });
+  response.on('close', () => { console.log('Response | Close 🏁'); });
+  response.on('finish', () => { console.log('Response | Finish ⤵️'); });
 });
