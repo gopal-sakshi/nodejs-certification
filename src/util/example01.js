@@ -5,7 +5,7 @@ async function fn() {
   var joke24 = await axios({
     method: 'get',
     url: 'https://official-joke-api.appspot.com/random_joke',
-    headers: { 'Accept-Encoding': 'application/json'}    
+    headers: { 'Accept-Encoding': 'application/json' }
   });
   return joke24.data;
 }

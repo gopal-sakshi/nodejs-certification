@@ -11,7 +11,8 @@ class CarBuilder {
     }
 
     notForSale() { this.isForSale = false; return this; }
-    addInStock() { this.isInStock23 = true; return this; }      // understand why this happens... what happens to this.isInStock23 property
+    // understand why this happens... what happens to this.isInStock23 property
+    addInStock() { this.isInStock23 = true; return this; }
     build() { return new Car(this.make, this.model, this.year, this.isForSale, this.isInStock); }
 }
 
@@ -19,7 +20,7 @@ class CarBuilder {
 
 // const CarBuilder = require('./CarBuilder');
 
-const bmw = new CarBuilder('bmw', 'x6', 2020) .addInStock().build();
+const bmw = new CarBuilder('bmw', 'x6', 2020).addInStock().build();
 const audi = new CarBuilder('audi', 'a8', 2021).notForSale().build();
 const mercedes = new CarBuilder('mercedes-benz', 'c-class', 2019).build();
 console.log(bmw);
@@ -28,5 +29,8 @@ console.log(bmw);
 /*********************************************************************************************** */
 
 // without using car builder object
-const bmw_old = new CarBuilder('bmw', 'x6', 2020, true, true);      // what does that 'true', 'true' represent ???
-                                                                        // its confusing
+const bmw_old = new CarBuilder('bmw', 'x6', 2020, true, true);
+// what does that 'true', 'true' represent ???
+    // its confusing when reading after 7 months... 
+    // actually     true, true ===> isForSale & isInStock
+
