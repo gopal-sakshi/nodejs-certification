@@ -13,7 +13,7 @@ const origin = Readable.from(content);
 //   console.log(chunk23);
 // });
 
-// APPROACH II -----------------> data read is not directly given as input to console.log
+// APPROACH II -----------------> data read is directly given as input to console.log
 origin.on('data', console.log);
 
 origin.on('end', () => { console.log('iterable ended') });

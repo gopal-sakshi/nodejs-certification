@@ -31,8 +31,7 @@ let deebuglog = util.debuglog('run-app2',
 	});
 
 // prints the debuglog function
-console.log(util.inspect(deebuglog,
-	showHidden = true, compact = true));
+// console.log(util.inspect(deebuglog, showHidden = true, compact = true));
 
 // Prints nothing
 console.log(a);

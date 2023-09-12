@@ -14,3 +14,6 @@ or
 
 Error [ERR_STREAM_CANNOT_PIPE]: Cannot pipe, not readable
 ---------------------------------------------------------------------------------------------------------------
+
+# consume streams
+

@@ -7,8 +7,8 @@
 // import 'pretty-console-colors';
 
 // Emit a warning with a code and additional detail.
-process.emitWarning('Something happened!', {
-  code: 'MY_WARNING',
+process.emitWarning('Something happened23!', {
+  code: 'MY_WARNING44',
   detail: 'This is some additional information',
 });
 

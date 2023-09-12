@@ -1,13 +1,13 @@
-/*********************************             used callbacks to consume a stream         *******************************/
+/****************             used callbacks to consume a stream         ***************/
 
 
 import fs from 'fs';
 const myStream1 = fs.createReadStream(`src/stream23/hello.txt`)
 const myStream2 = fs.createReadStream(`src/stream23/hello.txt`, { highWaterMark: 4 })        // Change our stream buffers length to 4 bytes
 
-// myStream1.on('data', console.log)                                    // prints as Buffer
-// myStream1.on('data', (data23) => console.log(data23))                // prints as Buffer
-// myStream1.on('data', chunk23 => console.log(chunk23.toString()))     // prints as string     "Hello World"
+myStream1.on('data', console.log)                                    // prints as Buffer
+myStream1.on('data', (data23) => console.log(data23))                // prints as Buffer
+myStream1.on('data', chunk23 => console.log(chunk23.toString()))     // prints as string     "Hello World"
 
 myStream2.on('data', chunk44 => { console.log(`next iteration ==> `, chunk44.toString()) });
 

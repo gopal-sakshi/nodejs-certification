@@ -1,12 +1,6 @@
-/**
- * Description: What happens to the functions: setTimeout, setImmediate and process.nextTick.
- */
-
-/** Import generics dependences */
 import EventEmitter from 'events';
-// import 'pretty-console-colors';
 
-// Define Event and launch.
+
 const myEmitterA = new EventEmitter();
 myEmitterA.on('event', () => {
   console.log('[launchEventA] 1 console event occurred!');

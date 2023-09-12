@@ -3,9 +3,9 @@ import axios from 'axios';
 
     // APPROACH I  
     var joke23 = await axios.get('https://official-joke-api.appspot.com/jokes/programming/random', {
-        headers: {            // default values of axios is gzip... so, use this header... otherwise, you get garbage values
-            'Accept-Encoding': 'application/json'
-        }
+        // headers: {            // default values of axios is gzip... so, use this header... otherwise, you get garbage values
+        //     'Accept-Encoding': 'application/json'
+        // }
     });
     console.log(joke23.data);
 

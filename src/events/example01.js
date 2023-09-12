@@ -1,29 +1,24 @@
-/**
- * Description: Differents instances and times.
- */
-
-/** Import generics dependences */
 import EventEmitter from 'events';
-// // import 'pretty-console-colors';
 
-// Define Event and launch.
+
 const myEmitterA = new EventEmitter();
 myEmitterA.on('event23', () => {
-  console.log('[launchEventA] an event occurred!');
+  console.log('[launchEventA] an event occurred 222222222 !');
 });
 const launchEventA = () => {
   myEmitterA.emit('event23');
 };
-launchEventA();
 
-// Define Event wait 1 second and lanuch.
+
 const myEmitterB = new EventEmitter();
 myEmitterB.on('event', () => {
-  console.log('[launchEventB] an event occurred!');
+  console.log('[launchEventB] an event occurred3333333333!');
 });
 const launchEventB = () => {
   myEmitterB.emit('event');
 };
+
+launchEventA();
 setTimeout(() => {
   launchEventB();
 }, 1000);

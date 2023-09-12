@@ -1,12 +1,5 @@
-/**
- * Description: Remove event with removeListener.
- */
-
-/** Import generics dependences */
 import EventEmitter from 'events';
-// import 'pretty-console-colors';
 
-// Define Event once.
 const myEmitterOnce = new EventEmitter();
 myEmitterOnce.once('event', () => {
   console.log('[myEmitterOnce] An Event occurred!');
