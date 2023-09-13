@@ -6,9 +6,9 @@ four different ways to create a child process in Node
 
 
 # spawn
-const { spawn } = require('child_process');                     // `destructure the spawn function` out of child_process module -------> <DESTRUCTURE>
-const child = spawn('pwd');                                     // 1st argument ====> any OS command
-child.stdout.on('data', {});                                    // listen on the data event of stdout readable stream... for the o/p of 'pwd' command
+const { spawn } = require('child_process');     // `destructure the spawn function` out of child_process module -------> <DESTRUCTURE>
+const child23 = spawn('pwd');                   // 1st argument ====> any OS command
+child23.stdout.on('data', {});                  // listen on the data event of stdout readable stream... for the o/p of 'pwd' command
 
 const child = spawn('find', ['.', '-type', 'f']);           // translates to ====> `find . -type f`     (array of all arguments)
 
