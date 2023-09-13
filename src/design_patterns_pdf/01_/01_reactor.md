@@ -11,7 +11,7 @@ the traditional approach to handle concurrency in web servers
 - but C10k problem
     there is a maximum limit of number of threads than can be created
 
-----------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 In addition to `blocking I/O`, most modern operating systems support another mechanism to access resources, called `non-blocking I/O`. 
 In this operating mode, the system call always returns immediately without waiting for the data to be read or written. 
 If no results are available at the moment of the call, the function will simply return a predefined constant
@@ -29,11 +29,11 @@ Event demultiplexing
 
 
 how concurrency works in a single-threaded application using 
-    synchronous event demultiplexer 
-    and non-blocking I/O. 
+    <synchronous event demultiplexer> 
+    and <non-blocking IO>
 We can see that using only one thread 
     does not impair our ability to run multiple I/O bound tasks concurrently. 
-The tasks are spread over time, instead of being spread across multiple threads
+The <tasks are spread over time, instead of being spread across multiple threads>
 
 `reactor pattern`
 - The main idea behind it is to have a handler associated with each I/O operation
@@ -47,8 +47,10 @@ Each operating system has its own interface for the Event Demultiplexer:
 - I/O Completion Port API (IOCP) on Windows.
 
 
-All these inconsistencies across & within the different OS required a higher-level abstraction to be built for the Event Demultiplexer. 
-This is exactly why the Node.js core team created a C library called libuv, to make Node.js compatible with all the major platforms 
+All these inconsistencies across & within the different OS 
+required a higher-level abstraction to be built for the Event Demultiplexer. 
+This is exactly why the Node.js core team created a C library called libuv
+to make Node.js compatible with all the major platforms 
 and normalize the non-blocking behavior of the different types of resource; 
 libuv today represents the low-level I/O engine of Node.js.
 Besides abstracting the underlying system calls, libuv also 
@@ -56,7 +58,7 @@ Besides abstracting the underlying system calls, libuv also
     managing the event queue,
     running asynchronous I/O operations,
     queuing other types of tasks.
-----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 Node.js recipe
 - reactor pattern 
@@ -64,3 +66,4 @@ Node.js recipe
 - set of bindings responsible for wrapping & exposing libuv and other low-level functionality to JavaScript.
 - V8 (JS engine)
 - A core JavaScript library (called node-core) that implements the high-level Node.js API
+----------------------------------------------------------------------------------------------------------
