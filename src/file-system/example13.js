@@ -2,11 +2,11 @@
  * Description: Copy function for copy file from origin to destination.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import cp from 'child_process';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

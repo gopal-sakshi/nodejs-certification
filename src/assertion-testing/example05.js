@@ -3,10 +3,10 @@
  * results with structure and typeof control.
  */
 
-/** Import generics dependences */
+
 import https from 'https';
 import { strict } from 'assert';
-// import 'pretty-console-colors';
+
 
 const httpsRequest = async (endpoint) => {
   return new Promise((resolve, reject) => {

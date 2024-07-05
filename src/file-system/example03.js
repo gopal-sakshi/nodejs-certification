@@ -2,10 +2,10 @@
  * Description: Get File Descriptors with stat function from json and txt files.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

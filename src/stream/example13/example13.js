@@ -2,7 +2,7 @@
  * Description: Parallel Pipes with Readable from array with iterate map, transform and Write with two Stream file.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { Readable, Transform } from 'stream';

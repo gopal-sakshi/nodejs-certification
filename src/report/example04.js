@@ -2,7 +2,7 @@
  * Description: Show errors and reports via EventEmitter.
  */
 
-/** Import generics dependences */
+
 import EventEmitter from 'events';
 
 class MyEmitterLog extends EventEmitter {}

@@ -2,11 +2,11 @@
  * Description: Chmod function for set and change permissions of a file.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import cp from 'child_process';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

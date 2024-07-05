@@ -1,4 +1,4 @@
-/** Import generics dependences */
+
 import { parentPort } from 'worker_threads';
 
 // Define random time for set to setTimeout.

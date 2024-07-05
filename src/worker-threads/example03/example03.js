@@ -3,7 +3,7 @@
  * Description: Create two Worker and send messages with parent.
  */
 
-/** Import generics dependences */
+
 import { Worker } from 'worker_threads';
 import path from 'path';
 

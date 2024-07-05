@@ -5,8 +5,8 @@
  * Description: Export and Import class extends with static method.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 // Import module People
 import { Employee } from './example-module.js';

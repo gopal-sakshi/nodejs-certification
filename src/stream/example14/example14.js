@@ -2,7 +2,7 @@
  * Description: Sequentials Pipes with end option to false and Readable and Duplex with write functions more info with timeouts.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { Readable, Duplex } from 'stream';

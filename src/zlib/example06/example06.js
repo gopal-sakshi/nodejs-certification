@@ -2,7 +2,7 @@
  * Description: Create http server and Static files into a public folder.
  */
 
-/** Import generics dependences */
+
 import zlib from 'zlib';
 import { pipeline } from 'stream';
 import { createReadStream } from 'fs';

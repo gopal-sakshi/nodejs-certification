@@ -2,10 +2,10 @@
  * Description: Get if directory is or not directory and file is or not file.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

@@ -4,7 +4,7 @@
  *              local json file for change it and save into other file.
  */
 
-/** Import generics dependences */
+
 import { Worker } from 'worker_threads';
 import path from 'path';
 import fs from 'fs';

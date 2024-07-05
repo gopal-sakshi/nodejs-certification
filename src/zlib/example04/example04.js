@@ -2,7 +2,7 @@
  * Description: Create severals .gz file with gzip, deflate and brotli methods. You can see which one is more efficient.
  */
 
-/** Import generics dependences */
+
 import zlib from 'zlib';
 import { pipeline } from 'stream';
 import { createReadStream, createWriteStream } from 'fs';

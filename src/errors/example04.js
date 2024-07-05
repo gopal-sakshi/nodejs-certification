@@ -2,9 +2,9 @@
  * Description: In try/catch with async and sync functions.
  */
 
-/** Import generics dependences */
+
 import { readFile, readFileSync } from 'fs';
-// import 'pretty-console-colors';
+
 
 const withTryCatch = () => {
   try {

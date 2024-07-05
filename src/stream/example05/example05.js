@@ -2,7 +2,7 @@
  * Description: Create origin and destination Stream and use gzip for compress file destination.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { createGzip } from 'zlib';

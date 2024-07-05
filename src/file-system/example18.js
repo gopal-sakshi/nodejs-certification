@@ -2,11 +2,11 @@
  * Description: Create temp directories with mkdtemp and mkdtempSync.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 // Get temp operative system foler.
 const tmpDir = os.tmpdir();

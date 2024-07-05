@@ -2,12 +2,12 @@
  * Description: Create first Async Hook and change json props.
  */
 
-/** Import generics dependences */
+
 import https from 'https';
 import http from 'http';
 import fs from 'fs';
 import async_hooks from 'async_hooks';
-// import 'pretty-console-colors';
+
 
 /** Define configuration */
 const CONFIG = {

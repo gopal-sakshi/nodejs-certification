@@ -4,7 +4,7 @@
  *              parent with finish setTimeout with random time.
  */
 
-/** Import generics dependences */
+
 import { Worker } from 'worker_threads';
 import path from 'path';
 

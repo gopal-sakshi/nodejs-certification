@@ -2,9 +2,9 @@
  * Description: child process of fork function.
  */
 
-/** Import generics dependences */
+
 import { spawnSync } from 'child_process';
-// import 'pretty-console-colors';
+
 
 // Launch spawnSync function to execute sh file.
 const fncSpawnSync = () => {

@@ -3,7 +3,7 @@
  *              For run this example you need create a .gz file from .jpg, execute "gzip photo.jpg".
  */
 
-/** Import generics dependences */
+
 import zlib from 'zlib';
 import { pipeline } from 'stream';
 import { createReadStream, createWriteStream } from 'fs';

@@ -4,11 +4,11 @@
  * You need write in your browser: http://localhost:3000/
  */
 
-/** Import generics dependences */
+
 import http from 'http';
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

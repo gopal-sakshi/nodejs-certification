@@ -2,7 +2,7 @@
  * Description: Create http server and return html file with Brotli Compress via response Stream.
  */
 
-/** Import generics dependences */
+
 import zlib from 'zlib';
 import { pipeline } from 'stream';
 import { createReadStream } from 'fs';

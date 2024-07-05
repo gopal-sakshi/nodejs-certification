@@ -2,8 +2,8 @@
  * Description: Collator functions for get order string and sort string by order.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 // Comparte order strings.
 console.log(new Intl.Collator('en').compare('a', 'a')); // Return 0

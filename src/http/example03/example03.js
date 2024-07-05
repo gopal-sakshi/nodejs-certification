@@ -2,9 +2,9 @@
  * Description: Create http server with custom routers and reponses for POST or GET methods.
  */
 
-/** Import generics dependences */
+
 import http from 'http';
-// import 'pretty-console-colors';
+
 import RouteMain from './routes/main.js';
 import RouteArticles from './routes/articles.js';
 import RouteNotFound from './routes/notfound.js';

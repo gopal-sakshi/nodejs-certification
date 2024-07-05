@@ -2,9 +2,9 @@
  * Description: Set Max Listeners to event with setMaxListeners..
  */
 
-/** Import generics dependences */
+
 import EventEmitter from 'events';
-// import 'pretty-console-colors';
+
 
 // Define Event once.
 const myEmitterOnce = new EventEmitter();

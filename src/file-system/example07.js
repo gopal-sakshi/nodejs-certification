@@ -2,10 +2,10 @@
  * Description: Get file list of folder and content files with Sync.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// // import 'pretty-console-colors';
+// 
 
 const __dirname = path.resolve();
 

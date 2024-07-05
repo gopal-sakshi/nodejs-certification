@@ -4,7 +4,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+
 
 // Emit a warning with a code and additional detail.
 process.emitWarning('Something happened23!', {

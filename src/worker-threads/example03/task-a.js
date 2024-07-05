@@ -1,4 +1,4 @@
-/** Import generics dependences */
+
 import { isMainThread, parentPort } from 'worker_threads';
 
 if (!isMainThread) { console.log('Worker A'); }

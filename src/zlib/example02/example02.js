@@ -2,7 +2,7 @@
  * Description: Compress jpg file to zip file and decompress zip for get jpg origin file.
  */
 
-/** Import generics dependences */
+
 import zlib from 'zlib';
 import { pipeline } from 'stream';
 import { createReadStream, createWriteStream } from 'fs';

@@ -3,9 +3,9 @@
  * You need open Chrome and click in "Open dedicated DevTools for Node" link.
  */
 
-/** Import generics dependences */
+
 import inspector from 'inspector';
-// import 'pretty-console-colors';
+
 
 /** Define configuration */
 const config = {

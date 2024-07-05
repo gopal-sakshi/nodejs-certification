@@ -2,7 +2,7 @@
  * Description: Work with Readline and Write Stream to save line by line.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import readline from 'readline';

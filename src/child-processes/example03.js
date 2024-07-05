@@ -2,7 +2,7 @@
  * Description: spawn and spawnSync functions with custom sh file.
  */
 
-/** Import generics dependences */
+
 import { spawn, spawnSync } from 'child_process';
 import path from 'path';
 

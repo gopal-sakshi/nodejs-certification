@@ -2,7 +2,7 @@
  * Description: Write error and report to concrete file with an example.
  */
 
-/** Import generics dependences */
+
 import path from 'path';
 
 const __dirname = path.resolve();

@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+
 import querystring from 'querystring';
 
 const jsonExample = {

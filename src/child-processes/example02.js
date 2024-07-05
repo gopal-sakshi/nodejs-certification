@@ -2,9 +2,9 @@
  * Description: exec and execSync functions.
  */
 
-/** Import generics dependences */
+
 import { exec, execSync } from 'child_process';
-// import 'pretty-console-colors';
+
 
 // Launch exec function to return folder and file list.
 const fncExec = () => {

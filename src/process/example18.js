@@ -3,7 +3,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+
 
 process.on('exit', () => {
   console.log(process.resourceUsage());

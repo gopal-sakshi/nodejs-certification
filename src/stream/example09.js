@@ -2,7 +2,7 @@
  * Description: Create Readable with iterate function with yield.
  */
 
-/** Import generics dependences */
+
 import { Readable } from 'stream';
 
 async function* generate() {

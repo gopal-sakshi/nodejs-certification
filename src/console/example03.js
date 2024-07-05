@@ -2,7 +2,7 @@
  * Description: Show and get log and save into .log files (out and error files).
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 

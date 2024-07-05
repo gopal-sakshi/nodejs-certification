@@ -2,9 +2,9 @@
  * Description: Equal numbers or not with assert.strictEqual method.
  */
 
-/** Import generics dependences */
+
 import assert from 'assert';
-// import 'pretty-console-colors';
+
 
 console.group('GROUP \n');
 
@@ -33,3 +33,5 @@ try {
 }
 
 console.groupEnd();
+
+assert.equal('2', 'A');

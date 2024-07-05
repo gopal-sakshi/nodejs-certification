@@ -2,10 +2,10 @@
  * Description: Get folder content with Callback, Sync and Promises.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

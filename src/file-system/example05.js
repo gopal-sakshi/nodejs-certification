@@ -2,10 +2,10 @@
  * Description: Read folder and file content with readdirSync and readFileSync functions.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

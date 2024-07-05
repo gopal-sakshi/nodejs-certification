@@ -4,7 +4,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+
 
 process.on('exit', (code) => {
   console.log(`Code Process: ${code}`);

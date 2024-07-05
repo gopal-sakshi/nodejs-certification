@@ -2,8 +2,8 @@
  * Description: Create first safe and not Buffer empty and with string.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 // Creates a zero-filled Buffer of length 10.
 const a1 = Buffer.alloc(10);

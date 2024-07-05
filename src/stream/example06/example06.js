@@ -2,7 +2,7 @@
  * Description: Create origin Stream, Custom transform Stream and destination Stream for replace text from origin to destination file.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { Transform } from 'stream';

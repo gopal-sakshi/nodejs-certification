@@ -2,7 +2,7 @@
  * Description: Use .callbackify method with Promise.
  */
 
-/** Import generics dependences */
+
 import util from 'util';
 
 function fn() {

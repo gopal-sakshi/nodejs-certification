@@ -2,10 +2,12 @@ import assert from 'assert';
 
 var obj1 = { a: 1 };
 var obj2 = { b: '1' };
+var obj3 = { a: 1};
 
 
 try {
     assert.strictEqual(obj1, obj2);
+    assert.strictEqual(obj1, obj3);
 } catch (error) {
     console.log(error.expected, error.actual);
 }

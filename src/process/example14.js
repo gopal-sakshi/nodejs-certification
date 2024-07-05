@@ -4,7 +4,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+
 
 const start = process.hrtime.bigint();
 // 191051479007711n

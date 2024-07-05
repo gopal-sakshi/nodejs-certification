@@ -2,9 +2,9 @@
  * Description: Equal objects values and structure or not with strict.deepEqual method.
  */
 
-/** Import generics dependences */
+
 import { strict } from 'assert';
-// import 'pretty-console-colors';
+
 
 /** Define objects */
 const obj1 = {

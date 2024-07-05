@@ -2,10 +2,10 @@
  * Description: Create Read Stream from file for get all content and others.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

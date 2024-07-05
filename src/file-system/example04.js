@@ -2,10 +2,10 @@
  * Description: Open folder and file details with opendirSync and openSync functions.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

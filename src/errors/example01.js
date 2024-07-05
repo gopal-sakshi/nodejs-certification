@@ -2,8 +2,8 @@
  * Description: Variable no defined into try/catch.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 const apples = 1;
 

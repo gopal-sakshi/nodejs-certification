@@ -2,8 +2,8 @@
  * Description: Get length of string and buffer string.
  */
 
-/** Import generics dependences */
-// // import 'pretty-console-colors';
+
+// 
 
 // Get length string const and lenght byte of Buffer and compare.
 const str = 'Hi from NodeJS';

@@ -2,8 +2,8 @@
  * Description: With properties of an object in try/catch.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 const apples = 1;
 

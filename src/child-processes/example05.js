@@ -4,10 +4,10 @@
  * https://imagemagick.org/
  */
 
-/** Import generics dependences */
+
 import { exec, spawn } from 'child_process';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

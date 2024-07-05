@@ -3,7 +3,7 @@
  * Description: Create Worker with the same file.
  */
 
-/** Import generics dependences */
+
 import { Worker, isMainThread } from 'worker_threads';
 import path from 'path';
 

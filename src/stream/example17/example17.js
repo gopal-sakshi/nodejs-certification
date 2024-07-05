@@ -2,7 +2,7 @@
  * Description: Create Stream from origin file, replace all emails to * characters and save into new Stream file.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { Transform } from 'stream';

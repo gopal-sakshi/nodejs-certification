@@ -2,9 +2,9 @@
  * Description: Request to url with method GET and port 443 and received JSON object.
  */
 
-/** Import generics dependences */
+
 import https from 'https';
-// import 'pretty-console-colors';
+
 
 // Create request method.
 const req = https.request({

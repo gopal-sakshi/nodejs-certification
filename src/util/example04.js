@@ -3,7 +3,7 @@
  * Execute: NODE_DEBUG=foo-* node src/util/example04.mjs
  */
 
-/** Import generics dependences */
+
 import util from 'util';
 
 const debuglogA = util.debuglog('foo-a');

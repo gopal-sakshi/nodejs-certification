@@ -2,10 +2,10 @@
  * Description: Remove folders with rmdir and rmdirSync functions with recursive option.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

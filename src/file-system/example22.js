@@ -2,10 +2,10 @@
  * Description: Create listener for get if change the folder and files content.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

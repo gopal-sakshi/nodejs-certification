@@ -4,7 +4,7 @@
 
 /** Require generics dependences */
 import EventEmitter from 'events';
-// import 'pretty-console-colors';
+
 
 process.on('warning', (warning) => {
   console.warn(warning);

@@ -2,10 +2,10 @@
  * Description: Open and close file by name with concrete path.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

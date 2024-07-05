@@ -2,7 +2,7 @@
  * Description: Create http server and Read Stream for return html file with gzip encoding.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { createGzip } from 'zlib';

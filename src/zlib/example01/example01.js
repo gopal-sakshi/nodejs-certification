@@ -2,7 +2,7 @@
  * Description: Compress to zip destination file from txt file how source.
  */
 
-/** Import generics dependences */
+
 import zlib from 'zlib';
 import { pipeline } from 'stream';
 import { createReadStream, createWriteStream } from 'fs';

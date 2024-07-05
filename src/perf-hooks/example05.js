@@ -5,7 +5,7 @@
 /** Require generics dependences */
 import { PerformanceObserver, performance } from 'perf_hooks';
 import https from 'https';
-// import 'pretty-console-colors';
+
 
 const request = (url, done) => {
   performance.mark(`request ${url} init`);

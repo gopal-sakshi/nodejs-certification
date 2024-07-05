@@ -2,8 +2,8 @@
  * Description: DateTimeFormat for format date with differents languaje and formats.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 // Get format with english format.
 const dateA = new Date('01/06/20');

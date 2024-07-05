@@ -2,9 +2,9 @@
  * Description: Create http server and show lifecycle-events.
  */
 
-/** Import generics dependences */
+
 import http from 'http';
-// import 'pretty-console-colors';
+
 
 /** Define configuration */
 const config = {

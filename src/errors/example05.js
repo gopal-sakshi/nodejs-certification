@@ -2,8 +2,8 @@
  * Description: Custom message Error into throw.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 const namePeopleA = 'jose';
 const namePeopleB = 'jhon';

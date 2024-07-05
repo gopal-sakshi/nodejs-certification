@@ -4,7 +4,7 @@
  */
 
 /** Require generics dependences */
-// import 'pretty-console-colors';
+
 
 // Execute this script for example: node --harmony src/process/example11.mjs
 console.log(process.execArgv); // Return array [ '--harmony' ]

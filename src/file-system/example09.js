@@ -2,10 +2,10 @@
  * Description: Access function for get if file exist or not.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
-// import 'pretty-console-colors';
+
 
 const __dirname = path.resolve();
 

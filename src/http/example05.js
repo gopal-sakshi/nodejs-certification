@@ -2,9 +2,9 @@
  * Description: Request to url with method POST and port 80 send and received JSON object.
  */
 
-/** Import generics dependences */
+
 import http from 'http';
-// import 'pretty-console-colors';
+
 
 // Create request method.
 const req = http.request({

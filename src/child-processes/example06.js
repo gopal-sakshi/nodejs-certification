@@ -2,9 +2,9 @@
  * Description: execFile and execFileSync functions.
  */
 
-/** Import generics dependences */
+
 import { execFile, execFileSync } from 'child_process';
-// // import 'pretty-console-colors';
+// 
 
 // Launch execFile function to execute node and ls.
 const fncExecFile = (app, options = []) => {

@@ -2,7 +2,7 @@
  * Description: Create http server and Read Stream for create gz file from txt file and download with browser.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { createGzip } from 'zlib';

@@ -2,7 +2,7 @@
  * Description: Sequentials Pipes and Readable with autoClose option to false and Duplex with end option to false and set severals writes functions.
  */
 
-/** Import generics dependences */
+
 import fs from 'fs';
 import path from 'path';
 import { Readable, Duplex } from 'stream';

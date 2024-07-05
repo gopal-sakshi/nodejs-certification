@@ -2,8 +2,8 @@
  * Description: Work with toString and toJSON functions.
  */
 
-/** Import generics dependences */
-// import 'pretty-console-colors';
+
+
 
 /** Define main const */
 const str = 'Hi from NodeJS';
