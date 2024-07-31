@@ -15,6 +15,7 @@ const sourceJPG = createReadStream(`${__dirname}/src/zlib/example04/photo.jpg`);
 const destinationGzipJPG = createWriteStream(`${__dirname}/src/zlib/example04/photo-gzip.jpg.gz`);
 const destinationDeflateJPG = createWriteStream(`${__dirname}/src/zlib/example04/photo-deflate.jpg.gz`);
 const destinationBrotliJPG = createWriteStream(`${__dirname}/src/zlib/example04/photo-brotli.jpg.gz`);
+
 // Define source and destination file for uncompress secuence.
 const sourceTXT = createReadStream(`${__dirname}/src/zlib/example04/article.txt`);
 const destinationGzipTXT = createWriteStream(`${__dirname}/src/zlib/example04/article-gzip.txt.gz`);
@@ -43,6 +44,7 @@ pipeline(sourceJPG, zlib.createDeflate(), destinationDeflateJPG, (err) => {
   console.log('[deflate jpg] Done!');
   pipeline(newSourceInflate, zlib.createInflate(), newDestInflate, (err) => { if(err) console.log(`blah =`,err); process.exit(1) })
 });
+
 
 // Define pipeline with streams and gzip method (other stream).
 pipeline(sourceJPG, zlib.createBrotliCompress(), destinationBrotliJPG, (err) => {

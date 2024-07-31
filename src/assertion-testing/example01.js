@@ -5,7 +5,6 @@
 
 import assert from 'assert';
 
-
 console.group('GROUP \n');
 
 // These two numbers are strict equal.

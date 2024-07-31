@@ -2,6 +2,7 @@
 const async_hooks = require('async_hooks')
 const {performance, PerformanceObserver} = require('perf_hooks')
 const set = new Set()
+// using .cjs extension as we use require (CommonJS)
 /************ IMPORTS ******************* */
 
 
@@ -43,6 +44,7 @@ setTimeout(() => {}, 3000)
         measuring the duration of asynchronous operations.
         storing context data
     b) async hooks & performance API ------> core modules of NodeJS
-    c) https://medium.com/nmc-techblog/the-power-of-async-hooks-in-node-js-8a2a84238acb#:~:text=The%20async_hooks%20module%20provides%20an,under%20the%20hood%20in%20Node.
+    c) https://medium.com/nmc-techblog/the-power-of-async-hooks-in-node-js-8a2a84238acb
+    
 
 */

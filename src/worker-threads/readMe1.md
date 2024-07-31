@@ -49,7 +49,8 @@ parentPort.on('message', async (data) => {});               // when worker recei
 - In short, it takes care of asynchronous I/O operations — primarily, interactions with the system’s disk and network. 
 - It is mainly used by modules such as fs (I/O-heavy) or crypto (CPU-heavy). 
 - Worker pool is implemented in libuv, 
-    which results in a slight delay whenever Node needs to communicate internally between JavaScript & C++, but this is hardly noticeable.
+    which results in a slight delay whenever Node needs to communicate internally between JavaScript & C++, 
+    but this is hardly noticeable.
 
 # Intro
 - Backend languages, which generally support multithreading, 
