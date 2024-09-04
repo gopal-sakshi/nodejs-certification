@@ -13,7 +13,7 @@ class CarBuilder {
     notForSale() { this.isForSale = false; return this; }
     // understand why this happens... what happens to this.isInStock23 property
     addInStock() { this.isInStock23 = true; return this; }
-    build() { return new Car(this.make, this.model, this.year, this.isForSale, this.isInStock); }
+    build() { return new Car(this.make, this.model, this.year, this.isForSale, this.isInStock23); }
 }
 
 // module.exports = CarBuilder;
