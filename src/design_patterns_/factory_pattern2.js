@@ -17,7 +17,7 @@ app.use('/route2', async (req, res) => {
 });
 
 // ... so on ===> for 10 routes ====> total 30 error messages
-// Suppose, you want to add a new attribute to the error object
+// Suppose, you want to add a new attribute "newAttr" to the error object
 
 
 app.use('/route1', async (req, res) => {

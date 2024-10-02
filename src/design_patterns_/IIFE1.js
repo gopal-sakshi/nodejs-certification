@@ -1,4 +1,5 @@
 let autoIncrement = (function() {
+    console.log("IIFE1 got executed");
     let number = 0;
     return function () {
             number++
